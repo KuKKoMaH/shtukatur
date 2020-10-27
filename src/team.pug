@@ -1,0 +1,15 @@
+extends pug/_layout
+
+block body
+  +header()
+    .c: h1 КОМАНДА КОМПАНИЙ "НЕВСКИЙ ШТУКАТУР"
+  include modules/team/team
+  include modules/rating/rating
+  - var WORKS_NOISE = true
+  include modules/works/works
+  - var ZAMER_WHITE = true
+  include modules/zamer/zamer
+  include modules/faq/faq
+  include modules/about/about
+  include modules/videos/videos
+  include modules/question/question

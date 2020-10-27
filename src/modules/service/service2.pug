@@ -1,0 +1,31 @@
+.c: .service
+  img.service__img.service__img--decor4.lazy(data-src='images/shpatel-10.png')
+  img.service__img.service__img--decor3.lazy(data-src='images/shpatel-09.png')
+  img.service__img.service__img--decor2.lazy(data-src='images/shpatel-07.png')
+  img.service__img.service__img--primary.lazy(data-src='modules/service/img/service-stroitel-02.png')
+  img.service__img.service__img--decor1.lazy(data-src='images/shpatel-06.png')
+  img.service__img.service__img--100.lazy(data-src='modules/service/img/service-100.png')
+  img.service__bg(src='modules/service/img/service-decor-02.png')
+  h1(style='')
+    | МЕХАНИЧЕСКАЯ#[br]
+    | ШТУКАТУРКА СТЕН#[br]
+    | ОТ 220 Р/М2#[br]
+    | В САНКТ-ПЕТЕРБУРГЕ И#[br]
+    | ЛЕНИНГРАДСКОЙ ОБЛАСТИ#[br]
+  h2 ОТ КОМПАНИИ НЕВСКИЙ ШТУКАТУР
+
+  .service__form
+    img.service__img.service__img--decor5.lazy(data-src='images/shpatel-08.png')
+    form
+      .service__title.title ЗАПОЛНИТЕ ФОРМУ
+      .service__subtitle.title
+        | И ПОЛУЧИТЕ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА
+
+      input.input(placeholder='Площадь помещения (по полу):')
+      input.input(placeholder='Высота потолков:')
+      .service__button
+        button.btnArrow.btnArrow--block
+          span
+            | ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ#[br]
+            | И ИНДИВИДУАЛЬНУЮ СМЕТУ
+          +svg('icon-doubleArrow')

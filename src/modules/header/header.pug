@@ -1,0 +1,45 @@
+mixin header(big)
+  header.header(class=big && 'header--big')
+    img.header__decor.header__decor--1.lazy(data-src='images/shpatel-09.png')
+    img.header__decor.header__decor--2.lazy(data-src='images/shpatel-10.png')
+    img.header__decor.header__decor--3.lazy(data-src='images/shpatel-11.png')
+    .c.header__top
+      img.header__logo(src='modules/header/img/logo.png' srcset='modules/header/img/logo@2x.png 2x, modules/header/img/logo@3x.png 3x')
+      .header__phone
+        .header__phoneValue 8(495)142-42-79
+        .header__phoneLabel Телефон в вашем городе
+      .header__city
+        .header__cityValue Ваш город: Москва
+        .header__cityLabel Выберите ваш город
+      .header__call
+        a.header__btn.popup__opener(href='#callback'): span Заказать звонок
+    .header__bottom
+      .header__menuContainer
+        .c
+          .header__menu
+            button.header__menuButton
+              | МЕНЮ
+              .header__menuIcon
+
+            .header__items
+              button.header__menuClose Закрыть
+
+              ul
+                li: a(href='#') Услуги
+                li: a(href='#') Наши работы
+                li: a(href='#') Наша команда
+                li: a(href='#') Цены
+                li: a(href='#') Материалы и оборудование
+                li: a(href='#') Статьи
+                li: a(href='#') Строительным компаниям
+                li: a(href='#') О компании
+                li: a(href='#') Контакты
+
+              .header__menuCall
+                a.header__btn(href='#'): span Заказать звонок
+
+    if block
+      block
+  .header__select
+    a.header__option.header__option--active(href='#') Санкт-Петербург
+    a.header__option(href='#') Москва

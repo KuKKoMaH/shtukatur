@@ -1,0 +1,19 @@
+extends pug/_layout
+
+block body
+  +header(true)
+    include modules/service/service2
+  include modules/advantages/advantages
+  include modules/targets/targets
+  include modules/zamer/zamer
+  - WORK_STEPS_NOISE = true
+  include modules/workSteps/workSteps
+  include modules/included/included
+  include modules/calc/calc
+  include modules/best/best
+  include modules/works/works
+  include modules/certificates/certificates
+  include modules/stock/stock
+  include modules/faq/faq
+  include modules/about/about
+  include modules/question/question

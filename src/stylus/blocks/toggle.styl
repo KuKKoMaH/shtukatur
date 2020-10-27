@@ -1,0 +1,30 @@
+.wpcf7-form-control-wrap .toggle
+  display: block;
+
+  label
+    display: block;
+    width: 83px
+    height: 47px
+    background: #ea7722
+    border-radius: 24px
+    padding: 7px 8px
+    cursor: pointer;
+
+    input
+      display: none;
+
+    span
+      display: block;
+      width: 33px
+      height: 33px
+      background: #fff
+      border-radius: 50%
+      font-size: 0
+      padding: 0
+      anim()
+
+      &:before, &:after
+        display: none;
+
+    input:checked + span
+      margin-left: 34px

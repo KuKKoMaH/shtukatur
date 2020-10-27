@@ -1,0 +1,83 @@
+.blog
+  padding: 0 0 26px;
+
+  &__head
+    position: relative;
+    height: 393px
+    z-index: 1
+    display: flex;
+    flex-direction column
+    justify-content flex-end
+    align-items flex-start
+    padding: 0 40px 61px 61px
+    margin-bottom: 31px
+    @media media-md
+      height: auto;
+      padding: 0
+      margin-bottom: 18px
+
+  &__image
+    border-radius: 5px
+    border: 8px solid #fff
+    position: absolute;
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-position: 50% 50%
+    background-size: cover
+    z-index: -1
+    box-shadow 0 0 27px rgba(#253247, .26)
+    @media media-md
+      height: 312px
+      position: static;
+      margin-bottom: 12px
+
+  h1
+    font-size: 30px
+    line-height: 1.2
+    color: #ffffff
+    margin: 0
+    @media media-md
+      font-size: 24px
+      color: #131313
+
+  &__date
+    margin-bottom: 14px
+    border-radius: 5px
+    background: rgba(#000, .55);
+    padding: 9px 22px 10px 21px
+    color: #ffffff
+    font-size: 16px
+    @media media-md
+      margin: 0 auto 12px
+
+  &__content
+    font-size: 18px
+    line-height: 1.7
+
+  &__tags
+    font-size: 18px
+    background: #ffffff
+    padding: 28px 32px
+    border-radius: 5px
+    margin-bottom: 29px
+
+    b
+      margin-right: 8px
+
+  &__share
+
+    > span
+      font-size: 18px
+      font-weight: 500
+      margin-right: 12px
+      vertical-align: middle;
+
+    li
+      &:before
+        display: none;
+
+    .ya-share2
+      display: inline-block;
+      vertical-align: middle;

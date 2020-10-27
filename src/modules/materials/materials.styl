@@ -1,0 +1,102 @@
+.materials
+  position: relative;
+  padding: 73px 0 122px
+  background url(../partners/img/partners-bg.jpg) 50% 50%
+  background-size: cover;
+  text-align: center;
+  @media media-lg
+    padding: 56px 0 32px
+  @media media-md
+    padding: 37px 0 46px
+
+  .c
+    position: relative;
+    z-index: 1
+
+  h2
+    font-size: 30px
+    margin-bottom: 72px
+    @media media-lg
+      margin-bottom: 50px
+    @media media-md
+      font-size: 24px
+      padding: 0 20px
+      margin-bottom: 31px
+
+  &__items
+    display: flex;
+    flex-wrap wrap
+    justify-content center
+    @media media-md
+      flex-wrap nowrap
+      justify-content flex-start
+
+  &__item
+    width: 33.3333%
+    margin-bottom: 32px
+    position: relative;
+    padding-top: 173px
+    @media media-lg
+      width: 50%
+      padding-top: 145px
+      margin-bottom: 27px
+    @media media-md
+      flex-shrink 0
+      padding-top: 111px
+
+  &__img
+    position: absolute;
+    left: 50%
+    top: 0
+    transform translateX(-50%)
+    max-width 100%
+    height: auto;
+    anim()
+    @media media-lg
+      max-width: 340px
+    @media media-md
+      max-width: 260px
+
+  &__text
+    position: relative;
+    z-index: 1
+    display: flex;
+    align-items center
+    justify-content center
+    background: url(../../images/sprite-materials-decor.png)
+    color: #ffffff
+    font-size: 23px
+    margin: 0 auto
+    @media media-lg
+      background: url(../../images/sprite-materials-decor-md.png)
+    @media media-md
+      background: url(../../images/sprite-materials-decor-sm.png)
+      font-size: 16px
+
+  &__decor1, &__decor2, &__decor3
+    position: absolute;
+    anim()
+    @media media-lg
+      display: none;
+
+  &__decor1
+    top: -21px;
+    right: 50%;
+    margin-right: 315px;
+
+  &__decor2
+    bottom: -41px;
+    right: 50%;
+    margin-right: 344px;
+
+  &__decor3
+    bottom: -69px;
+    left: 50%;
+    margin-left: 116px;
+
+  &__nav
+    display: none;
+    @media media-md
+      margin-top: 3px
+      display: flex;
+      justify-content center

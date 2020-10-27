@@ -1,0 +1,16 @@
+.videos
+  .c
+    h2 ВИДЕООТЗЫВЫ КЛИЕНТОВ КОМПАНИИ "НЕВСКИЙ ШТУКАТУР"
+    .videos__slider
+      .videos__items
+        each i in [1,2,3,4,5,6,7,8,9]
+          .videos__item
+            a.videos__video(href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' style='background-image: url(https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg)')
+              .videos__icon: +svg("icon-play")
+      .videos__nav
+        button.navBtn.navBtn--prev: +svg('icon-arrow')
+        button.navBtn.navBtn--next: +svg('icon-arrow')
+
+  img.videos__decor1.lazy(data-src='images/shpatel-02.png')
+  img.videos__decor2.lazy(data-src='images/shpatel-03.png')
+  img.videos__decor3.lazy(data-src='images/shpatel-01.png')

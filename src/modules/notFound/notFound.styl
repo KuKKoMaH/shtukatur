@@ -1,0 +1,44 @@
+.notFound
+  position: relative;
+  padding: 120px 0 0
+  background: url(./img/notFound-bg.jpg) 50% 100% no-repeat
+  height 876px
+  @media media-lg
+    padding-top: 46px
+    height: 600px
+    background-image: url(./img/notFound-bg-sm.jpg);
+    background-size: cover;
+  @media media-md
+    padding-top: 36px
+    height: 355px
+
+  h1
+    max-width 840px
+    margin: 0 auto
+    color: #ffffff
+    text-align: center;
+    line-height: 1.35
+    font-size: 36px
+    @media media-lg
+      font-size: 30px
+    @media media-md
+      font-size: 18px
+      padding: 0 20px
+
+    a
+      color: #ea7722
+
+      &:hover
+        text-decoration: underline;
+
+  &__img
+    position: absolute;
+    left: 50%
+    transform translateX(-50%)
+    top: 300px
+    @media media-lg
+      width: 668px
+      top: 190px
+    @media media-md
+      width: 260px
+      top: 165px

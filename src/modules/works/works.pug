@@ -1,0 +1,24 @@
+.works(class=WORKS_NOISE && 'works--noise')
+  img.works__decor.lazy(data-src='modules/works/img/works-img.png')
+  .c
+    h2 РАБОТЫ КОМПАНИЙ "НЕВСКИЙ ШТУКАТУР"
+    .works__slider
+      .works__items
+        each i in [1,2,3,4,5,6]
+          .works__item
+            img.works__img.lazy(data-src='modules/works/img/works-0' + i + '.png')
+            .works__header.title
+              | ШТУКАТУРКА СТЕН В ДОМЕ
+              | ПАМЕЯТНИКЕ НА УЛ ЛЕНИНА
+            .works__difficulty.title
+              | Сложность:
+              +svg('icon-star')
+              +svg('icon-star')
+              +svg('icon-star')
+              +svg('icon-star')
+              +svg('icon-star')
+            .works__text Перед началом работы, подписывается договор, в котором, помимо ответственности сторон, присутствует точно.
+
+      .works__nav
+        button.navBtn.navBtn--prev: +svg('icon-arrow')
+        button.navBtn.navBtn--next: +svg('icon-arrow')

@@ -1,0 +1,61 @@
+.wpcf7-checkbox .wpcf7-list-item, .checkbox
+  cursor: pointer;
+
+  input
+    display: none
+
+  span
+    display: block
+    position: relative
+    //display: flex
+    //align-items flex-start
+    padding-left: 40px
+    padding-top: 1px
+    font-size: 16px
+    anim()
+
+    &:not(:empty):before
+      margin-right: 16px
+
+    &:before, &:after
+      content: ''
+      display: block
+
+    &:before
+      position: absolute;
+      top: 0
+      left: 0
+      width: 25px
+      height: 25px
+      border-radius: 3px
+      background: #fff
+      border: 2px solid #a4a4a4
+      anim()
+
+    &:after
+      position: absolute
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAKCAQAAADF5xxPAAAAPklEQVR42mNgwAr+izDgkND4P/O/KC4JTUISyOaiSoj+n/lfA4dRYAENBI1pvg8WCbCk+f9l/y1w+UURXQQAQI4tMK9BCDsAAAAASUVORK5CYII=')
+      top: 8px;
+      left: 7px;
+      width: 13px
+      height: 10px
+      border-radius: 50%
+      opacity 0
+      anim()
+
+  input:checked ~ span
+
+    &:after
+      opacity 1
+
+    &:before
+      border-color: #ea7722
+      background: #ea7722
+
+  &:hover
+    span
+      &:before
+        border-color: #ea7722
+
+  &--warn
+    color: #e53641

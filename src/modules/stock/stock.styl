@@ -1,0 +1,142 @@
+.stock
+  position: relative;
+  padding: 78px 0 69px
+  @media media-lg
+    padding: 72px 0 63px
+  @media media-md
+    padding: 47px 0 54px
+
+  &--bg
+    background: url(../../images/bricks.jpg) 0 0
+
+  &__decor
+    position: absolute;
+    anim(.2s)
+
+    &--1
+      left: 50%
+      margin-left: 175px;
+      top: -2px;
+      @media media-lg
+        display: none;
+
+    &--2
+      right: 50%
+      margin-right: 490px;
+      top: -57px;
+      @media media-lg
+        margin-right: 270px
+      @media media-md
+        display: none;
+
+    &--3
+      left: 50%
+      margin-left: 449px;
+      bottom: -16px;
+      z-index: 1
+      @media media-lg
+        display: none;
+
+  h2
+    text-align: center;
+    margin-bottom: 18px
+    @media media-md
+      margin-bottom: 22px
+
+  h3
+    text-align: center;
+    margin-bottom: 30px
+    position: relative;
+    z-index: 1
+    font-size: 24px
+    line-height: 1.25
+    @media media-lg
+      margin-bottom: 90px
+    @media media-md
+      font-size: 18px
+      margin-bottom: 60px
+
+    span
+      position: relative;
+      display: inline-block;
+      margin: 0 auto
+      color: #ffffff
+      @media media-md
+        color: inherit;
+
+      &:before
+        content: ''
+        position: absolute;
+        background: url(./img/sprite-stock-bg.png)
+        top: -12px;
+        left: -27px;
+        z-index: -1
+        @media media-md
+          display: none;
+
+    &:after
+      content: ''
+      display: block;
+      margin: 20px auto 0
+      background: url(./img/sprite-stock-line.png)
+      @media media-md
+        position: absolute;
+        top: -15px
+        margin-top: 0
+
+  &__items
+    display: flex;
+    justify-content center
+    margin: 0 -55px
+    @media media-lg
+      margin: 0
+      justify-content flex-start
+      align-items flex-start
+
+  &__item
+    position: relative;
+    margin: 0 55px
+    width: 303px
+    flex-shrink 0
+    @media media-lg
+      margin: 0
+
+  &__img
+    position: relative;
+
+    img
+      position: absolute;
+      bottom: -80px
+      left: 50%
+      transform translateX(-50%)
+      anim(.2s)
+
+  &__text
+    position: relative;
+    z-index: 1
+    background: url(./img/sprite-stock-bg2.png)
+    color: #ffffff
+    text-align: center;
+    display: flex;
+    align-items center
+    justify-content center
+    margin: 0 auto 20px
+    font-size: 19px
+
+  &__button
+    position: relative;
+    z-index: 1
+    @media media-lg
+      display: none;
+
+    .btnArrow
+      margin: 0 auto
+
+  &__nav
+    display: none;
+    @media media-lg
+      margin-top: 34px
+      display: flex;
+      justify-content center
+    @media media-md
+      margin-top: 14px

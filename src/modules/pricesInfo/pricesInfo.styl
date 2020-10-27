@@ -1,0 +1,63 @@
+.pricesInfo
+  position: relative;
+  padding: 50px 0 74px
+  @media media-lg
+    padding: 38px 0 13px
+  @media media-md
+    padding: 41px 0 13px
+
+  &__img
+    position: absolute;
+    anim(.2s)
+    pointer-events none;
+
+    &--1
+      right: 50%
+      margin-right: 134px
+      bottom: 0
+      z-index: 11
+      @media media-lg
+        display: none;
+
+    &--2
+      left: 50%
+      top: 120px;
+      margin-left: 232px;
+      @media media-lg
+        top: 107px;
+        margin-left: 85px;
+      @media media-md
+        position: static;
+        display: block;
+        margin: 0 auto 40px
+
+    &--3
+      left: 50%
+      top: 148px;
+      margin-left: 139px;
+      @media media-lg
+        top: 135px;
+        margin-left: -21px;
+      @media media-md
+        display: none;
+
+  &__content
+    padding-left: 431px
+    font-size: 18px
+    line-height: 1.7
+    @media media-lg
+      padding: 0 30px 0 28px
+    @media media-md
+      text-align: center;
+      padding: 0 20px
+
+    p
+      margin-bottom: 30px
+
+    hr
+      background: url(./img/sprite-priceInfo-line.png)
+      border: 0
+      margin-bottom: 27px
+      @media media-md
+        margin: 0 auto 27px
+

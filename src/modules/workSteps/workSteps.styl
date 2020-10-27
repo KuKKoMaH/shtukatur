@@ -1,0 +1,101 @@
+.workSteps
+  position: relative;
+  padding: 105px 0 45px
+  background: url(./img/workSteps-bg.jpg) 50% 100% no-repeat
+  background-size: cover;
+  color: #ffffff
+  @media media-lg
+    padding: 92px 0 63px
+    background-image: url(./img/workSteps-bg-sm.jpg)
+  @media media-md
+    padding: 53px 0 15px
+
+  &--noise
+    background-image: url(./img/workSteps-bg-noise.jpg);
+    @media media-lg
+      background-image: url(./img/workSteps-bg-noise-sm.jpg);
+
+  .c
+    position: relative;
+    z-index: 1
+
+  h2
+    text-align: center;
+    position: relative;
+    color: #ffffff
+    margin-bottom: 76px
+    @media media-lg
+      margin-bottom: 81px
+    @media media-md
+      font-size: 30px
+      margin-bottom: 47px
+
+    &:before
+      content: ''
+      position: absolute;
+      background: url(../../images/sprite-workSteps-header.png)
+      left: 50%
+      transform translateX(-50%)
+      top: -21px
+      z-index: -1
+      @media media-md
+        display: none;
+
+  &__steps
+    display: flex;
+    flex-wrap wrap
+    margin: 0 -10px
+    @media media-lg
+      justify-content center
+
+  &__step
+    position: relative;
+    font-family: 'DIN Pro Cond', sans-serif;
+    width: 300px
+    margin: 0 10px 35px
+    text-align: center;
+    @media media-md
+      margin-bottom: 45px
+
+    &:after
+      content ''
+      position: absolute;
+      left: 100%
+      background: url(../../images/sprite-workSteps-step.png)
+      top: 4px;
+      margin-left: -85px;
+      @media media-lg
+        display: none;
+
+    &:nth-child(4n)
+      &:after
+        display: none;
+
+  &__header
+    position: relative;
+    font-size: 24px
+    margin-bottom: 18px
+
+    &:before
+      content: ''
+      position: absolute;
+      background: url(../../images/sprite-workSteps-item.png)
+      left: 50%
+      transform translateX(-50%)
+      top: -6px
+      z-index: -1
+
+  &__text
+    font-size: 24px
+    line-height: 1.25
+    @media media-md
+      font-size: 20px
+      line-height: 1.2
+
+  &__decor
+    position: absolute;
+    right: 50%
+    margin-right: 340px
+    top: -143px
+    @media media-lg
+      display: none;

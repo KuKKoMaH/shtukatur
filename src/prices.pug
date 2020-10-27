@@ -1,0 +1,12 @@
+extends pug/_layout
+
+block body
+  +header()
+    .c: h1 ЦЕНЫ НА УСЛУГИ КОМПАНИЙ "НЕВСКИЙ ШТУКАТУР"
+  include modules/pricesInfo/pricesInfo
+  include modules/prices/prices
+  include modules/calc/calc
+  - var STOCK_BG = true
+  include modules/stock/stock
+  include modules/about/about
+  include modules/question/question

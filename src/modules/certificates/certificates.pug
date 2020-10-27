@@ -1,0 +1,15 @@
+.certificates
+  .c
+    h3 Мы работаем по всему Сантк-Петербургу и Ленинградской области, а также имеем все необходимые сертификаты на производитмые услуги, оборудование и используемые материалы, которые помогают нам давать 10 лет гарантию
+
+    .certificates__container
+      .map(data-center="[59.938951,30.315635]", data-zoom=16)
+      .certificates__slider
+        .certificates__items
+          each i in [1,2,3,4,5,6]
+            .certificates__item: .certificates__card
+              img.lazy(data-src='modules/certificates/img/certificate.jpg')
+
+        .certificates__nav
+          button.navBtn.navBtn--prev: +svg('icon-arrow')
+          button.navBtn.navBtn--next: +svg('icon-arrow')

@@ -1,0 +1,18 @@
+.targets
+  img.targets__decor.targets__decor--1.lazy(data-src='images/shpatel-04.png')
+  img.targets__decor.targets__decor--2.lazy(data-src='images/shpatel-05.png')
+  img.targets__decor.targets__decor--3.lazy(data-src='images/shpatel-02.png')
+  .c
+    h2 МЫ ПРОИЗВОДИМ РАБОТЫ ПОД ЛЮБЫЕ ЦЕЛИ
+    .targets__slider
+      .targets__items
+        each text, i in ['УЛУЧШЕНАЯ ГИПСОВАЯ ШТУКАТУРКА<br/>ПОД ПРАВИЛО <span>ОТ 200 Р/М2</span>', 'ВЫСОКОКАЧЕСТВЕННАЯ ГИПСОВАЯ<br/>ШТУКАТУРКА ПОД ОБОИ <span>ОТ 180 РУБ</span>', 'ЦЕНМЕНТНО-ИЗВИСКОВАЯ ШТУКАТУРКА<br/><span>ОТ 100 РУБ</span>', 'ЦЕМЕНТНО-ПЕСЧАНАЯ', 'ПО ВЕЛОКСУ', 'ТЕПЛОИЗОЛЯЦИОННАЯ']
+          .targets__item
+            .targets__card
+              .targets__img(style='background-image: url(modules/targets/img/targets-img-0' + (i + 1) + '.jpg)')
+              .targets__text.title !{text}
+              a.btn(href='#') Узнать подробнее
+      .targets__nav
+        button.navBtn.navBtn--prev: +svg('icon-arrow')
+        button.navBtn.navBtn--next: +svg('icon-arrow')
+

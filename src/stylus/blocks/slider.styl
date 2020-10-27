@@ -1,0 +1,51 @@
+.slider
+  height: 16px
+  border 4px solid rgba(#000000, .05)
+  border-radius: 8px
+  box-shadow none
+  margin-bottom: 62px
+  //&.noUi-horizontal
+
+  .noUi-connects
+    border-radius: 4px
+    background: linear-gradient(to bottom, #b6b6b6, #8e8e8e);
+
+  .noUi-connect
+    border-radius: 4px
+    background: linear-gradient(to bottom, #ee8f3b, #e36017);
+
+  .noUi-handle
+    width: 34px
+    height: 34px
+    border-radius: 50%
+    background: #ea7722
+    box-shadow none
+    border: 0
+    top: -12px
+
+    &:before
+      display: none;
+
+    &:after
+      width: 14px
+      height: 14px
+      border-radius: 50%
+      background: #ffffff
+      left: 10px;
+      top: 10px;
+
+  .noUi-marker
+    display: none;
+
+  .noUi-value, .noUi-tooltip
+    font-size: 24px
+    font-family: 'DIN Pro Cond', sans-serif;
+    line-height: 1
+    font-weight: bold
+    color: #380800
+
+  .noUi-tooltip
+    bottom: auto
+    top: 120%
+    //border: 0
+    //background: #000;

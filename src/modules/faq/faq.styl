@@ -1,0 +1,133 @@
+.faq
+  position: relative;
+  background: url(./img/faq-bg.jpg) 50% 0
+  padding: 74px 0 63px
+  @media media-lg
+    padding: 54px 0 56px
+  @media media-md
+    background: url(./img/faq-bg-sm.jpg) 50% 0
+    padding: 39px 0 56px
+
+  h2
+    text-align: center;
+    margin-bottom: 57px
+    @media media-lg
+      margin-bottom: 53px
+    @media media-md
+      margin: 0 20px 39px
+
+    &:after
+      content ''
+      display: block;
+      margin: 16px auto 0
+      background: url(../../images/sprite-faq-underline.png)
+
+  &__cols
+    display: flex;
+    justify-content space-between
+    @media media-lg
+      flex-direction: column
+      align-items center
+
+  &__item
+    position: relative;
+    color: #380800
+    margin-bottom: 30px
+    width: 631px
+    @media media-lg
+      margin-bottom: 23px
+    @media media-md
+      width: 263px
+
+    &:before
+      content ''
+      position: absolute;
+      background: #ffffff
+      left: 4px;
+      top: 5px;
+      right: 3px;
+      bottom: 3px
+      opacity: 0
+      pointer-events none
+      anim()
+      @media media-lg
+        background: rgba(#000, .03);
+
+
+    &:hover:before
+      opacity: 1
+
+    &--active
+      &:before
+        opacity: 1
+
+      & .faq__question:after
+        transform rotate(180deg)
+
+  &__question
+    position: relative;
+    z-index: 1
+    background: url(../../images/sprite-faq-border.png)
+    font-family: 'DIN Pro Cond', sans-serif;
+    display: flex;
+    align-items center
+    padding-left: 110px
+    padding-right: 80px
+    font-size: 24px
+    cursor: pointer;
+    @media media-md
+      background: url(../../images/sprite-faq-border-sm.png)
+      padding-left: 19px
+      padding-right: 50px
+
+    &:before
+      content: '?'
+      position: absolute;
+      color: #ffffff
+      left: 43px;
+      top: 19px;
+      font-size: 36px
+      @media media-md
+        display: none;
+
+    &:after
+      content: ''
+      position: absolute;
+      background: url(../../images/sprite-faq-arrow.png)
+      right: 36px;
+      top: 42px;
+      @media media-md
+        right: 18px
+
+  &__answer
+    position: relative;
+    max-height 0
+    overflow: hidden;
+    z-index: 1
+    anim(.2s)
+
+  &__inner
+    padding: 30px 71px 9px;
+    line-height: 1.35;
+    font-size: 18px;
+    @media media-lg
+      padding-bottom: 14px
+    @media media-md
+      padding: 17px 21px 3px
+
+  &__decor1, &__decor2
+    position: absolute;
+    right: 50%
+    z-index: 1
+    anim(.2s)
+    pointer-events none;
+    @media media-lg
+      display: none;
+
+  &__decor1
+    top: -12px;
+    margin-right: 314px;
+
+  &__decor2
+    bottom: -37px;
+    margin-right: 341px;

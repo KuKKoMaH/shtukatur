@@ -1,0 +1,58 @@
+.partners
+  background: url(./img/partners-bg.jpg) 50% 50% no-repeat
+  background-size: cover;
+  padding: 65px 0 51px
+  @media media-md
+    padding: 48px 0 58px
+
+  h2, h3
+    text-align: center;
+
+  h2
+    margin-bottom: -5px
+
+  h3
+    margin-bottom: 21px
+    @media media-lg
+      margin-bottom: 26px
+    @media media-md
+      margin-bottom: 21px
+
+  &__items
+    display: flex;
+    flex-wrap wrap
+    justify-content center
+    @media media-lg
+      margin: 0 32px
+    @media media-md
+      flex-wrap nowrap
+      justify-content flex-start
+      margin: 0 0 53px
+
+  &__item
+    width: 16.6666%
+    height: 219px
+    position: relative;
+    @media media-lg
+      width: 25%
+      height: 180px
+    @media media-md
+      flex-shrink 0
+
+  &__card
+    position: absolute;
+    top: 0
+    left: 50%
+    transform translateX(-50%)
+    background: url(../../images/sprite-partners-item.png)
+    display: flex;
+    align-items center
+    justify-content center
+    @media media-lg
+      background: url(../../images/sprite-partners-item-sm.png)
+
+  &__nav
+    display: none;
+    @media media-md
+      display: flex;
+      justify-content center

@@ -1,0 +1,50 @@
+.card
+  position: relative;
+  box-shadow 0 0 27px rgba(#253247, .26)
+  border-radius: 9px
+
+  &:before, &:after
+    content: ''
+    position: absolute;
+    pointer-events none
+
+  &:before
+    bottom: -5px
+    left: 13px
+    right: 13px
+    height: 18px
+    border-radius: 9px
+    background: #ffffff
+    box-shadow 0 0 27px rgba(#253247, .26)
+
+    @media media-md
+      border-radius: 0
+      left: 0
+      right: 0
+
+  &:after
+    left: 10px
+    top: 10px
+    right: 10px
+    bottom: 10px
+    border-radius: 3px
+    border: 1px solid #e0e0e0
+    z-index: 1
+    @media media-md
+      left: 0
+      right: 0
+      border-left: 0
+      border-right: 0
+      border-radius: 0
+
+  &__content
+    background: #fff url('data:image/gif;base64,R0lGODdhFwAJAPMKAP7+/vb29vf39/j4+Pn5+fr6+vv7+/z8/P39/f////X19QAAAAAAAAAAAAAAAAAAACwAAAAAFwAJAAAEMDDJSRM6xqDKqxFKKBZdhYDFBqxfcJRnkJbtRhQGgaqlRYSggIDA600QJKNyyWyWIgA7')
+    border-radius: 9px
+    padding: 10px
+    position: relative;
+    //z-index: 1
+    box-shadow 0 0 20px rgba(#000, .15)
+    @media media-md
+      border-radius: 0
+
+

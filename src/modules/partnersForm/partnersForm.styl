@@ -1,0 +1,102 @@
+.partnersForm
+  position: relative;
+  padding: 55px 0 92px
+  background: url(../../images/bricks.jpg) 50% 50%
+  @media media-lg
+    padding: 41px 0 67px
+    background: #ffffff
+  @media media-md
+    padding: 0px 0 58px
+
+  .card
+    position: relative;
+    z-index: 1
+    @media media-lg
+      width: 700px
+      margin: 0 auto
+    @media media-md
+      width: 100%
+
+  .card__content
+    padding: 47px 109px 50px
+    @media media-lg
+      padding: 40px 25px 42px
+    @media media-md
+      padding: 32px 30px 50px
+
+  .input
+    margin-bottom: 13px
+
+  textarea
+    height: 135px
+
+  h2
+    text-align: center;
+    font-size: 30px
+    margin-bottom: 46px
+    @media media-lg
+      margin: 0 50px 39px
+    @media media-md
+      font-size: 24px
+      line-height: 1.15
+      padding: 0 20px
+      margin: 0 0 27px
+
+    &:after
+      @media media-lg
+        content: ''
+        display: block;
+        height: 1px
+        width: 100%
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAABCAQAAABXwBd7AAAADUlEQVR42mNi+A+HDAAjBAT+TTXN0AAAAABJRU5ErkJggg==');
+        opacity: .2
+        margin-top: 25px
+      @media media-md
+        margin: 21px -48px 0
+        width: auto;
+
+  &__cols
+    display: flex;
+    margin: 0 -15px
+    @media media-lg
+      margin: 0
+      flex-direction column
+
+  &__col
+    flex: 1
+    margin: 0 15px
+    @media media-lg
+      margin: 0
+      width: 100%
+
+  &__footer
+    margin-top: 22px
+    position: relative;
+    z-index: 1
+    display: flex;
+    justify-content center
+    @media media-md
+      flex-direction: column
+      align-items center
+      margin-top: 5px
+
+    .btnArrow
+      margin: 0 15px
+      @media media-md
+        margin: 15px 0 0 0
+
+  &__decor1, &__decor2
+    position: absolute;
+    anim()
+    @media media-lg
+      display: none;
+
+  &__decor1
+    right: 50%
+    top: -45px;
+    margin-right: 204px;
+
+  &__decor2
+    left: 50%
+    bottom: -46px;
+    margin-left: 476px;

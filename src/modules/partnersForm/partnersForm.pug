@@ -1,0 +1,23 @@
+.partnersForm
+  .c
+    .card
+      .card__content
+        h2 ДЛЯ СОТРУДНИЧЕСТВА ЗАПОЛНИТЕ ФОРМУ НИЖЕ
+        .partnersForm__cols
+          .partnersForm__col
+            input.input(placeholder='Ваше имя:')
+            input.input(placeholder='Ваш номер телефона:' type='tel')
+          .partnersForm__col
+            textarea.input(placeholder='Опишите Вашу задачу:')
+        .partnersForm__footer
+          button.btnArrow.btnArrow--outline.file
+            span.wpcf7-form-control-wrap.form-file
+              input(type="file" multiple name="form-file" size="40" class="wpcf7-form-control wpcf7-file wpcf7-validates-as-required" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" aria-required="true" aria-invalid="false")
+            span.file__name ПРИЛОЖИТЕ ФАЙЛЫ
+            +svg('icon-doubleArrow')
+          button.btnArrow
+            span ПОЛУЧИТЬ ПРЕДЛОРЖЕНИЕ
+            +svg('icon-doubleArrow')
+  img.partnersForm__decor1.lazy(data-src='images/shpatel-01.png')
+  img.partnersForm__decor2.lazy(data-src='images/shpatel-03.png')
+

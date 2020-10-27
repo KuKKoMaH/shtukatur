@@ -1,0 +1,16 @@
+extends pug/_layout
+
+block body
+  +header(true)
+    include modules/service/service
+  include modules/order/order
+  - var SERVICES_BG = true
+  include modules/services/services
+  include modules/best/best
+  include modules/workSteps/workSteps
+  include modules/works/works
+  - var STOCK_BG = true
+  include modules/stock/stock
+
+  include modules/about/about
+  include modules/question/question

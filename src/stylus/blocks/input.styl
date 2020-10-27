@@ -1,0 +1,56 @@
+.input
+  display: block
+  width: 100%
+  background: #fff
+  border: 2px solid #d7d7d7
+  border-radius: 5px
+  padding: 19px 28px
+  font-size: 16px
+  font-weight: 500;
+  line-height: 1
+  color: #292929
+  anim()
+
+  //&:hover, &:focus
+  //  border-color: #42bde4
+
+  &--textarea
+    resize: none
+    min-width 100%
+    max-width 100%
+    line-height: 1.2
+
+  &--sm
+    padding-top: 14px
+    padding-bottom: 14px
+
+  &.wpcf7-not-valid
+    border-color: #e72831
+
+.datepicker
+  position: relative;
+
+  &:before, &:after
+    content ''
+    position: absolute;
+    //right: 30px
+    //top: 50%
+    //transform translate(50%, -50%)
+    pointer-events: none
+
+  &:before
+    width: 47px
+    height: 47px
+    background: #ea7722
+    border-radius: 5px
+    right: 7px
+    top: 7px
+
+  &:after
+    background: url(../../images/sprite-calendar.png);
+    right: 18px;
+    top: 18px;
+
+.datepicker-container
+  li:before
+    display: none;

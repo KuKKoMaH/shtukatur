@@ -1,0 +1,238 @@
+.order
+  padding: 81px 0 144px
+  background: url(./img/order-bg.jpg) 50% 50%
+  position: relative;
+  @media media-lg
+    background: transparent;
+    padding: 54px 0 92px
+  @media media-md
+    padding: 38px 0 82px
+
+  h2
+    max-width 900px
+    margin-bottom: 71px
+    position: relative;
+    z-index: 1
+    @media media-lg
+      text-align: center;
+      margin-bottom: 17px
+    @media media-md
+      margin-bottom: 9px
+      padding: 0 20px
+
+    span
+      display: inline-block;
+      position: relative;
+      color: #ffffff
+      @media media-md
+        color: #380800
+
+      &:before
+        content ''
+        position: absolute;
+        background: url(../../images/sprite-order-decor2.png)
+        z-index: -1
+        top: -8px
+        left: -10px
+        @media media-md
+          display: none;
+
+  &__outer
+    @media media-lg
+      box-shadow: none
+
+    & > .card__content
+      padding: 17px 20px
+      @media media-lg
+        background: transparent;
+        box-shadow: none
+      @media media-md
+        padding: 0
+
+    &:after, &:before
+      display: none;
+
+  &__card
+    width: 730px
+    @media media-md
+      width: 100%
+
+    & > .card__content
+      margin-bottom: -73px
+      padding: 52px 0 76px 0
+      @media media-lg
+        padding: 47px 0 78px 0
+      @media media-md
+        padding: 39px 0 46px 0
+
+    h3
+      font-size: 24px
+      line-height: 1.15
+      text-align: center;
+      margin-bottom: 30px
+      padding: 0 85px
+      @media media-md
+        padding: 0
+        margin-bottom: 26px
+
+      &:after
+        margin: 31px 0 0
+        content: ''
+        display: block;
+        height: 1px
+        background: url('data:image/gif;base64,R0lGODlhDAABAPEAALm5ufLy8gAAAAAAACH5BAEAAAIALAAAAAAMAAEAAAIEhI8hBQA7')
+        @media media-md
+          margin-top: 22px
+
+  &__items
+    position: relative;
+    z-index: 3
+    display: flex;
+    flex-wrap wrap
+    justify-content center
+    @media media-lg
+      margin-bottom: 20px
+    @media media-md
+      flex-direction column
+      align-items center
+      margin-bottom: 16px
+
+  &__item
+    position: absolute;
+    background: url(../../images/sprite-order-decor.png)
+    color: #ffffff
+    font-family: 'DIN Pro Cond', sans-serif;
+    font-size: 18px
+    line-height: 1
+    z-index: 3
+    display: flex;
+    align-items center
+    justify-content center
+    left: 50%
+    padding: 0px 20px 5px 20px
+
+    &:nth-child(1)
+      margin-left: 66px
+      top: 305px;
+
+    &:nth-child(2)
+      margin-left: 29px
+      top: 133px;
+
+    &:nth-child(3)
+      margin-left: 537px
+      top: 207px;
+      padding-left: 48px
+
+    &:nth-child(4)
+      margin-left: 289px
+      top: 343px;
+      padding-left: 53px
+
+    &:nth-child(5)
+      margin-left: 333px
+      top: 187px;
+    @media media-lg
+      position: static;
+      margin: 0 5px 25px !important
+    @media media-md
+      background: url(../../images/sprite-order-decor3.png)
+      padding: 0 0 5px !important
+      margin-bottom: 20px !important
+
+  &__header
+    display: flex;
+    align-items center
+    margin-bottom: 49px
+    padding-left: 60px
+    @media media-md
+      flex-direction column
+      position: relative;
+      padding: 0
+      margin-bottom: 82px
+
+    .toggle
+      margin: 0 56px
+      @media media-md
+        position: absolute;
+        top: 100%
+        left: 50%
+        transform translateX(-50%)
+        margin: 16px 0 0 0
+
+  &__value
+    position: relative;
+    font-family: 'DIN Pro Cond', sans-serif;
+    font-size: 24px
+    border-bottom: 2px solid transparent;
+    anim()
+
+    svg
+      position: absolute;
+      display: inline-block;
+      fill: #ea7722
+      width: 17px
+      height: 16px
+      top: 10px
+      opacity: 0
+      anim()
+      @media media-md
+        display: none;
+
+    &--left
+      svg
+        left: 100%
+        margin-left: 8px
+
+    &--right
+      svg
+        right: 100%
+        margin-right: 8px
+        transform rotate(180deg)
+
+    &--active
+      color: #380800
+      border-color: #380800
+
+      svg
+        opacity: 1
+
+  &__form
+    margin: 0px 214px 0 87px
+    position: relative;
+    z-index: 1
+    @media media-lg
+      margin: 0px 62px 0
+    @media media-md
+      margin: 0px 30px 0
+
+    & .input
+      margin-bottom: 13px
+
+    & .btnArrow
+      margin-top: 30px
+      @media media-lg
+        margin: 30px auto 0
+      @media media-md
+        margin-top: 34px
+
+  &__image
+    position: absolute;
+    left: 50%
+    margin-left: -197px
+    top: -157px
+    z-index: 2
+    pointer-events none
+    anim(.2s)
+    @media media-lg
+      display: none;
+
+  &__decor
+    position: absolute;
+    anim(.2s)
+    right: 53px;
+    bottom: -35px;
+    z-index: 2
+    @media media-lg
+      display: none;
+

@@ -1,0 +1,36 @@
+.order
+  .c
+    h2 МЫ УЖЕ БОЛЕЕ #[span 10 ЛЕТ] УСПЕШНО ВЫПОЛНЯЕМ ШТУКАТУРНЫЕ РАБОТЫ В ПОМЕЩЕНИЯХ ЛЮБОГО ТИПА
+    .order__outer.card: .card__content
+      img.order__image.lazy(data-src='modules/order/img/order-image.png' width=1114 height=820)
+      .order__items
+        .order__item КОТТЕДЖИ
+        .order__item КВАРТИРЫ
+        .order__item КОММЕРЧЕСКИЕ ПОМЕЩЕНИЯ
+        .order__item СОЦИАЛЬНЫЕ ОБЪЕКТЫ
+        .order__item НЕЖИЛЫЕ ОБЪЕКТЫ
+      .order__card.card: .card__content
+        img.order__decor.lazy(data-src='images/shpatel-08.png')
+        .order__header
+          .order__value.order__value--left.order__value--active
+            | ЧАСТНЫЕ ЗАКАЗЧИКИ
+            +svg('icon-doubleArrow')
+          span.wpcf7-form-control-wrap.form-type
+            span.wpcf7-form-control.wpcf7-checkbox.toggle
+              span.wpcf7-list-item.first.last
+                label
+                  input(type="checkbox" name="form-type[]" value="type")
+                  span.wpcf7-list-item-label type
+          //label.toggle
+          //  input(type="checkbox")
+          //  span
+          .order__value.order__value--right
+            |СТРОИТЕЛЬНЫЕ КОМПАНИИ
+            +svg('icon-doubleArrow')
+        h3 МЫ ПРЕДЛАГАЕМ СПЕЦИАЛЫЕ УСЛОВИЯ ДЛЯ СТРОИТЕЛЬНЫХ КОМПАНИЙ. ЗАПОЛНИТЕ ФОРМУ НИЖЕ, ЧТОБЫ УЗНАТЬ УСЛОВИЯ.
+        .order__form
+          input.input(placeholder='Ваше имя:')
+          input.input(placeholder='Ваш номер телефона:')
+          button.btnArrow
+            span НЕЖИЛЫЕ ОБЪЕКТЫ
+            +svg('icon-doubleArrow')

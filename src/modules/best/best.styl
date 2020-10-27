@@ -1,0 +1,128 @@
+.best
+  background: #f9f9f9
+  padding: 60px 0 0px
+  position: relative;
+  @media media-lg
+    background: #ffffff
+    padding: 30px 0 68px
+  @media media-lg
+    padding: 30px 0 50px
+
+  h2
+    text-align: center;
+    margin-bottom: 37px
+    @media media-lg
+      margin-bottom: 43px
+    @media media-md
+      font-size: 24px
+      margin-bottom: 25px
+
+  &__slider
+    overflow: hidden;
+
+  &__items
+    display: flex;
+    flex-wrap wrap
+    justify-content space-around
+    @media media-lg
+      flex-wrap: nowrap
+      justify-content flex-start
+
+  &__item
+    width: 33.333%
+    @media media-lg
+      flex-shrink 0
+
+  &__card
+    position: relative;
+    z-index: 1
+    width: 300px
+    margin 0 auto
+    padding-bottom: (56 + 76) px
+    height: 100%
+    @media media-lg
+      padding-bottom: (45 + 76) px
+    @media media-md
+      display: flex;
+      flex-direction: column
+      text-align: center;
+      align-items center
+      padding-bottom: (42 + 76) px
+
+  &__counter
+    position: relative;
+    font-size: 78px
+    line-height: 1
+    color: #ea7722
+    font-weight: 900
+    //margin-bottom: 117px
+    margin-bottom: 50px
+    margin-left: 42px
+    @media media-lg
+      margin: 0 auto 50px
+
+    &:before
+      z-index: -1
+      content: ''
+      position: absolute;
+      background: url(../../images/sprite-island.png);
+      top: 44px
+      left: -33px;
+
+    &:after
+      content: attr(data-text)
+      position: absolute;
+      transform scaleY(-1)
+      background: linear-gradient(to top, #ea7722 0, rgba(#ea7722, 0) 40%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      top: 52px
+      left: 0
+
+
+  &__head
+    font-family: 'DIN Pro Cond', sans-serif;
+    font-size: 24px
+    line-height: 1.25
+    font-weight: bold;
+    color: #000000
+    //position: absolute;
+    //transform translateX(-50%)
+    //right: -29px;
+    top: 128px;
+    right: 0
+    margin-bottom: 7px
+    @media media-md
+      margin-bottom: 12px
+
+  &__text
+    font-size: 16px
+    line-height: 1.5
+    padding-right: 15px
+    margin-bottom: 21px
+    @media media-md
+      margin-bottom: 28px
+
+    span
+      color: #d96e20
+
+  &__nav
+    display: none;
+    @media media-lg
+      display: flex;
+      justify-content center
+
+  .btnArrow
+    position: absolute;
+    bottom: 56px
+    left: 0
+
+
+  &__decor
+    position: absolute;
+    bottom: 0
+    right: 50%
+    margin-right: 590px
+    anim(.2s)
+    @media media-lg
+      display: none;

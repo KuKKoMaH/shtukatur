@@ -1,0 +1,12 @@
+#callback.popup
+  .popup__header.title УКАЖИТЕ КОНТАКТНЫЕ ДАННЫЕ И УДОБНОЕ ВРЕМЯ ДЛЯ ЗВОНКА
+  .popup__body
+    p.center: b Эксперт позвонит вам прямо сейчас или в другое рабочее время
+    p: input.input.input--sm(placeholder='Ваше имя:')
+    p: input.input.input--sm(placeholder='Ваш номер телефона:')
+    p.center: b Выберите время для звонка:
+    p.popup__buttons
+      button.btn.btn--active.popup__now Позвонить сейчас
+      button.btn.popup__later Позвонить позже
+    p.popup__time: input.input.input--sm(placeholder='Например 27 марта в 13.00:')
+    p.center: button.btn.popup__submit Позвоните мне

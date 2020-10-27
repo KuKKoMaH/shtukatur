@@ -1,0 +1,20 @@
+.services(class=SERVICES_BG && 'services--bg')
+  if SERVICES_BG
+    img.services__decor.services__decor--1.lazy(data-src='images/shpatel-04.png')
+    img.services__decor.services__decor--2.lazy(data-src='images/shpatel-05.png')
+    img.services__decor.services__decor--3.lazy(data-src='images/shpatel-02.png')
+  .c
+    h2 УСЛУГИ КОМПАНИИ НЕВСКИЙ ШТУКАТУР
+    .services__slider
+      .services__items
+        each text, i in ['РУЧНАЯ<br/>ШТУКАТУРКА<br/>ОТ 100 РУБ/М2', 'МЕХАНИЗИРОВАННАЯ<br/>ШТУКАТУРКА СТЕН', 'МЕХАНИЗИРОВАННАЯ<br/>ШТУКАТУРКА ОТКОСОВ', 'МЕХАНИЗИРОВАННАЯ<br/>ШТУКАТУРКА ФАСАДОВ', 'МЕХАНИЗИРОВАННАЯ<br/>ШТУКАТУРКА ПОТОЛКОВ', 'ПОЛУСУХАЯ СТЯЖКА<br/>ПОЛА']
+          .services__item
+            .services__card
+              img.lazy.services__img(data-src='modules/services/img/services-img-0' + (i + 1) + '.png')
+              .services__text.title: span !{text}
+              a.btnArrow(href='#')
+                span УЗНАТЬ ПОДРОБНЕЕ
+                +svg('icon-doubleArrow')
+      .services__nav
+        button.navBtn.navBtn--prev: +svg('icon-arrow')
+        button.navBtn.navBtn--next: +svg('icon-arrow')

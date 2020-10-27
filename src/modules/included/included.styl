@@ -1,0 +1,76 @@
+.included
+  padding: 60px 0 37px
+  background-color: #e1e1e1
+  background-image: url(../../images/noise-line.png), url(../../images/noise.png)
+  background-position: 50% 50%, 50% 50%;
+  @media media-lg
+    background-image: url(../../images/noise.png)
+    padding: 40px 0 16px
+  @media media-md
+    padding: 38px 0 64px
+
+  h2
+    text-align: center;
+    margin-bottom: 62px
+    @media media-lg
+      margin-bottom: 74px
+    @media media-md
+      margin-bottom: 57px
+
+  &__items
+    display: flex;
+    flex-wrap wrap
+    justify-content center
+
+    @media media-md
+      margin: 0
+      flex-wrap nowrap
+      justify-content flex-start
+
+  &__item
+    width: 25%
+    position: relative;
+    z-index: 1
+    flex-shrink 0
+    text-align: center;
+    margin-bottom: 46px
+    @media media-lg
+      width: 330px
+      margin-bottom: 49px
+    @media media-md
+      margin-bottom: 0
+
+  &__number
+    position: relative;
+    font-size: 60px
+    margin-bottom: 43px
+    color: #3c3c3c
+    @media media-md
+      margin-bottom: 38px
+
+    &:before
+      content: ''
+      position: absolute;
+      background: url(./img/sprite-included-decor.png)
+      top: -23px;
+      margin-left: -65px;
+      left: 50%
+
+    &:after
+      content: ''
+      display: inline-block;
+      width: 14px
+      height: 14px
+      background: #ea7722
+      margin-left: 2px
+
+  &__text
+    font-size: 24px
+    line-height: 1.25
+
+  &__nav
+    display: none;
+    @media media-md
+      margin-top: 28px
+      display: flex;
+      justify-content center

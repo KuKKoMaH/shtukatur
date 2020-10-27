@@ -1,0 +1,39 @@
+#popup-zamer.popup.popup--lg
+  .popup__header.title ЗАКАЖИТЕ БЕСПЛТАНЫЙ ВЫЕЗД ЗАМЕРЩИКА ПРЯМО СЕЙЧАС
+  .popup__body: .zamer.zamer--popup
+    .zamer__content
+      .zamer__slider
+        .zamer__items
+          .zamer__item: .zamer__card
+            | Подберем#[br]
+            | материалы
+          .zamer__item: .zamer__card
+            | Померяем точную#[br]
+            | площадь
+          .zamer__item: .zamer__card
+            | согласуем удобнвый даты#[br]
+            | начала работ
+          .zamer__item: .zamer__card
+            | Сделаем план вашего#[br]
+            | помещения
+          .zamer__item: .zamer__card
+            | определимся с вариантом#[br]
+            | машинной штукатурки
+          .zamer__item: .zamer__card
+            | Посчитаем и зафиксируем#[br]
+            | смету на ваш объек
+        .zamer__nav
+          button.navBtn.navBtn--prev: +svg('icon-arrow')
+          button.navBtn.navBtn--next: +svg('icon-arrow')
+
+      .zamer__form: .card: .card__content
+        input.input(placeholder='Ваш номер телефона:')
+        input.input(placeholder='Удобная дата замера:')
+
+        button.btnArrow
+          span ВЫЗВАТЬ ЗАМЕРЩИКА
+          +svg('icon-doubleArrow')
+
+    img.zamer__stroitel.lazy(data-src='modules/zamer/img/stroitel.png' width=908 height=1002)
+    img.zamer__phone.lazy(data-src='images/phone.png' width=706 height=491)
+

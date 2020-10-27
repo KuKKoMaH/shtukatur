@@ -1,0 +1,18 @@
+.question
+  .c
+    h2 ОСТАЛИСЬ ВОПРОСЫ!?
+    h3 ВВЕДИТЕ СВОЙ НОМЕР ТЕЛЕФОНА И НАШ МЕНЕДЖЕР #[span ПОЗВОНИТ ВАМ В ТЕЧЕНИЕ 35 СЕКУНД!]
+
+    .question__card: .card: .card__content
+      input.input(placeholder='Ваш номер телефона:')
+      textarea.input.input--textarea(placeholder='Ваш вопрос:')
+      .question__file.btn__container.file
+        span.wpcf7-form-control-wrap.form-file
+          input(type="file" name="form-file" size="40" class="wpcf7-form-control wpcf7-file wpcf7-validates-as-required" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" aria-required="true" aria-invalid="false")
+        span.question__name.file__name Приложите файлы, при необходимости
+        .btn Прикрепить
+      button.btnArrow
+        span ОТПРАВИТЬ ВОПРОС
+        +svg('icon-doubleArrow')
+  img.question__rule.lazy(data-src='modules/question/img/rule.png' width=369 height=394)
+  img.question__phone.lazy(data-src='images/phone.png' width=706 height=491)

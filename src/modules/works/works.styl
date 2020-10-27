@@ -1,0 +1,120 @@
+.works
+  position: relative;
+  padding: 40px 0 40px
+  overflow: hidden;
+  @media media-lg
+    padding: 48px 0 16px
+  @media media-md
+    padding: 36px 0 53px
+
+  &--noise
+    background-image: url(../../images/noise-line.png), url(../../images/noise.png)
+    background-position: 50% 50%, 50% 50%;
+    @media media-lg
+      background-image: url(../../images/noise.png)
+
+  h2
+    text-align: center;
+    margin-bottom: 65px
+
+  &__items
+    display: flex;
+    flex-wrap wrap
+    justify-content center
+    @media media-md
+      flex-wrap nowrap
+      justify-content flex-start
+
+  &__item
+    width: 33.3333%
+    margin-bottom: 18px
+    position: relative;
+    padding-top: 173px
+    @media media-lg
+      width: 50%
+      padding-top: 145px
+      margin-bottom: 31px
+    @media media-md
+      flex-shrink 0
+      padding-top: 123px
+      margin-bottom: 0
+
+  &__img
+    position: absolute;
+    left: 50%
+    top: 0
+    transform translateX(-50%)
+    max-width 100%
+    height: auto;
+    overflow: hidden;
+    border-radius: 5px
+    anim()
+    @media media-lg
+      max-width: 340px
+    @media media-md
+      max-width: 260px
+
+  &__header
+    position: relative;
+    z-index: 1
+    display: flex;
+    align-items center
+    justify-content center
+    background: url(./img/sprite-works-bg.png)
+    color: #ffffff
+    font-size: 23px
+    margin: 0 auto
+    padding: 0 50px
+    text-align: center;
+    margin-bottom: 14px
+    @media media-lg
+      background: url(./img/sprite-works-bg-md.png)
+      margin-bottom: 25px
+      padding: 0 40px
+
+    @media media-md
+      background: url(./img/sprite-works-bg-sm.png)
+      font-size: 16px
+      margin-bottom: 11px
+
+  &__difficulty
+    margin-bottom: 16px
+    font-size: 18px
+    padding-left: 15px
+    @media media-lg
+      padding-left: 28px
+    @media media-md
+      max-width 320px
+      padding-left: 30px
+      margin: 0 auto 13px
+
+    svg
+      width: 17px
+      height: 16px
+      fill: #ea7722
+
+  &__text
+    padding: 0 15px
+    @media media-lg
+      padding: 0 28px
+    @media media-md
+      text-align: center;
+      max-width 320px
+      margin: 0 auto
+      padding: 0 20px
+
+  &__nav
+    display: none;
+    @media media-md
+      margin-top: 26px
+      display: flex;
+      justify-content center
+
+  &__decor
+    position: absolute;
+    right: 50%
+    margin-right: 336px;
+    bottom: 29px;
+    anim(.2s)
+    @media media-lg
+      display: none;

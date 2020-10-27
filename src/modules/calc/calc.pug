@@ -1,0 +1,73 @@
+.calc
+  .c
+    h2 МЫ ПРЕДЛАГАЕМ РАССЧИТАТЬ ВАМ СТОИМОСТЬ ИНДИВИДУАЛЬНО ПОД КЛЮЧ
+    h3 ЗАПОЛНИТЕ ФОРМУ НИЖЕ, ЧТОБЫ СПЕЦИАЛИСТ ПРОКОНСУЛЬТИРОВАЛ ВАС И РАССЧИТАЛ ПРЕДВАРИТЕЛЬНУЮ СТОИМОСТЬ РАБОТ
+
+    .calc__form
+      img.lazy.calc__decor(data-src='modules/calc/img/calc-image.png')
+      .calc__label: span 2 354 РУБ
+      .card
+        .card__content
+          .calc__left
+            .title.calc__header.calc__header--2 НЕОБХОДИМЫЕ РАБОТЫ
+            .calc__block
+              span.wpcf7-checkbox
+                span.wpcf7-list-item: label
+                  input(type="checkbox" name="form-works[]" value="Штукатурка стен")
+                  span.wpcf7-list-item-label Штукатурка стен
+                span.wpcf7-list-item: label
+                  input(type="checkbox" name="form-works[]" value="Штукатурка стен")
+                  span.wpcf7-list-item-label Штукатурка откосов
+                span.wpcf7-list-item: label
+                  input(type="checkbox" name="form-works[]" value="Штукатурка стен")
+                  span.wpcf7-list-item-label Штукатурка фасада
+                span.wpcf7-list-item: label
+                  input(type="checkbox" name="form-works[]" value="Штукатурка стен")
+                  span.wpcf7-list-item-label Штукатурка потолка
+                span.wpcf7-list-item: label
+                  input(type="checkbox" name="form-works[]" value="Штукатурка стен")
+                  span.wpcf7-list-item-label Стяжка пола
+
+              //
+              //.calc__checkbox: label.checkbox
+              //  input(type='checkbox')
+              //  span Штукатурка стен
+              //.calc__checkbox: label.checkbox
+              //  input(type='checkbox')
+              //  span Штукатурка откосов
+              //.calc__checkbox: label.checkbox
+              //  input(type='checkbox')
+              //  span Штукатурка фасада
+              //.calc__checkbox: label.checkbox
+              //  input(type='checkbox')
+              //  span Штукатурка потолка
+              //.calc__checkbox: label.checkbox
+              //  input(type='checkbox')
+              //  span Стяжка пола
+            .title.calc__header.calc__header--1 МАТЕРИАЛЫ
+            .calc__block.
+              <span class="wpcf7-form-control-wrap form-materials"><span class="wpcf7-form-control wpcf7-radio"><span class="wpcf7-list-item first"><label><input type="radio" name="form-materials" value="Необходимы материалы" checked="checked"><span class="wpcf7-list-item-label">Необходимы материалы</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="form-materials" value="Без материалов"><span class="wpcf7-list-item-label">Без материалов</span></label></span><span class="wpcf7-list-item last"><label><input type="radio" name="form-materials" value="Рассмотрю варианты"><span class="wpcf7-list-item-label">Рассмотрю варианты</span></label></span></span></span>
+            //.calc__radio: label.radio
+            //  input(type='radio' name='material')
+            //  span Необходимы материалы
+            //.calc__radio: label.radio
+            //  input(type='radio' name='material')
+            //  span Без материалов
+            //.calc__radio: label.radio
+            //  input(type='radio' name='material')
+            //  span Рассмотрю варианты
+          .calc__right
+            .title.calc__header.calc__header--3 ПЛОЩАДЬ ОБЪЕКТА
+            .calc__block
+              input.input(placeholder='Площадь Вашего объекта:')
+            .title.calc__header.calc__header--3 ВЫСОТА ПОТОЛКОВ ОБЪЕКТА
+            .calc__block
+              input.slider(data-from='1.5' data-to='10' data-start='3')
+            .title.calc__header.calc__header--3 ВАШ НОМЕР ТЕЛЕФОНА
+            .calc__block
+              input.input(placeholder='Ваш номер телефона' type='tel')
+      .calc__footer
+        button.btnArrow.btnArrow--line
+          span РАССЧИТАТЬ ИНДИВИДУАЛЬНУЮ СТОИМОСТЬ
+          +svg('icon-doubleArrow')
+

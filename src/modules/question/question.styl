@@ -1,0 +1,140 @@
+.question
+  background: url(./img/question-bg.jpg) 50% 0 no-repeat
+  height: 875px
+  padding: 83px 0 0
+  position: relative;
+  @media media-lg
+    height: auto;
+    background-size: cover;
+    padding: 68px 0 130px
+  @media media-md
+    padding: 47px 0 80px
+
+  h2, h3
+    text-align: center;
+    color: #ffffff
+    position: relative;
+    z-index: 1
+
+  h2
+    margin-bottom: 5px
+    @media media-md
+      margin-bottom: 23px
+
+  h3
+    font-size: 24px
+    line-height: 2
+    margin-bottom: 47px
+    @media media-lg
+      margin-bottom: 79px
+      padding: 0 20px
+    @media media-md
+      font-size: 18px
+      line-height: 1.35
+      margin-bottom: 41px
+
+    span
+      display: inline-block;
+      position: relative;
+
+      &:before
+        content: ''
+        position: absolute;
+        background: url(../../images/sprite-question-highlight.png)
+        z-index: -1
+        left: -30px
+        top: -6px
+        @media media-md
+          display: none;
+
+  &__card
+    width: 695px
+    margin: 0 auto
+    @media media-md
+      width: 100%
+
+    & .card
+      &:after
+        display: none;
+
+      &__content
+        position: relative;
+        z-index: 1
+        border: 0
+        padding: 69px 72px 73px
+        @media media-lg
+          padding: 73px 72px 69px
+        @media media-md
+          padding: 27px 29px 45px
+
+    & .input
+      margin-bottom: 13px
+
+      &--textarea
+        height: 120px
+        margin-bottom: 20px
+        @media media-md
+          margin-bottom: 23px
+
+    & .btnArrow
+      margin: 0 auto
+
+  &__file
+    position: relative;
+    font-weight: 500
+    color: #ea7722
+    margin-bottom: 44px
+    display: flex;
+    margin-right: 30px
+    align-items center
+    @media media-md
+      flex-direction column
+      margin-right: 0
+      text-align: center;
+
+    input
+      position: absolute;
+      right: 0
+      bottom: 0
+      width: 200%
+      height: 100%
+      opacity: 0
+      cursor: pointer;
+      z-index: 2
+
+  &__name
+    margin-right: 20px
+    white-space nowrap
+    overflow hidden
+    text-overflow ellipsis
+    flex: 1
+    @media media-md
+      display: block;
+      margin-bottom: 26px
+      margin-right: 0
+      max-width: 100%
+
+  &__rule
+    position: absolute;
+    bottom: -85px
+    margin-right: 62px
+    right: 50%
+    z-index: 1
+    pointer-events none
+    anim(.2s)
+    @media media-lg
+      display: none;
+
+  &__phone
+    pointer-events none
+    position: absolute;
+    left: 50%
+    margin-left: 90px
+    bottom: 24px
+    z-index: 1
+    anim(.3s)
+    @media media-lg
+      margin-left: 90px
+      bottom: 37px
+    @media media-md
+      display: none;

@@ -1,0 +1,30 @@
+.contacts
+  .c
+    .contacts__container
+      .map(data-center="[59.938951,30.315635]", data-zoom=16)
+      .contacts__content
+        .contacts__cols
+          .contacts__col
+            h3 Офис Москва:
+            ul
+              li Ул Плуталова дом 6
+              li +7 (999) 999-99-99
+              li mail@mail.ru
+          .contacts__col
+            h3 Офис Санкт-Петербург:
+            ul
+              li Ул Плуталова дом 6
+              li +7 (999) 999-99-99
+              li mail@mail.ru
+        ul.contacts__requsites
+          li Реквизиты ООО Жекстрой
+          li ИНН 75775757
+          li Огрнип 18189188181
+
+        .contacts__card.card: .card__content
+          .contacts__form
+            h3 ФОРМА ОБРАТНОЙ СВЯЗИ
+            input.input(placeholder='Ваш номер телефона:' type='tel')
+            button.btnArrow
+              span СВЯЗАТЬСЯ
+              +svg('icon-doubleArrow')

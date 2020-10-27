@@ -1,0 +1,162 @@
+.zamer
+  background: #f1f1f1
+  padding: 59px 0 138px
+  position: relative;
+  overflow: hidden;
+  @media media-lg
+    padding: 62px 0 143px
+  @media media-md
+    padding: 42px 0 51px
+
+  &--white
+    background: #f9f9f9
+    @media media-lg
+      background: #ffffff
+
+  &--popup
+    background-color: transparent;
+    overflow: visible;
+    padding: 32px 0 126px
+    margin-left: -20px
+
+    .zamer
+      &__content
+        max-width 750px
+
+      &__form
+        margin-left: 32px
+        @media media-md
+          margin-left: 0
+
+      &__stroitel
+        margin-left: -5px
+
+      &__phone
+        margin-left: -100px
+
+      &__slider
+        @media media-md
+          overflow: hidden
+
+    .btnArrow
+      position: relative;
+      z-index: 1
+
+    @media media-md
+      margin: 0 -8px
+      padding: 0
+
+
+  .c
+    position: relative;
+    z-index: 1
+
+  h2
+    text-align: center;
+    margin-bottom: 53px
+    @media media-lg
+      padding: 0 60px
+      margin-bottom: 41px
+    @media media-md
+      padding: 0
+      margin-bottom: 38px
+
+  &__content
+    max-width 695px
+    @media media-lg
+      max-width: 710px
+      margin: 0 auto
+    @media media-md
+      max-width: none
+
+  &__slider
+    margin-bottom: 44px
+    @media media-lg
+      margin-bottom: -8px
+    @media media-md
+      margin-bottom: 42px
+
+  &__items
+    display: flex;
+    flex-wrap wrap
+    @media media-md
+      flex-wrap nowrap
+
+  &__item
+    width: 33.3333%
+    font-size: 16px
+    @media media-md
+      flex-shrink 0
+
+  &__card
+    text-align: center;
+    margin-bottom: 2px
+    @media media-lg
+      margin-bottom: 49px
+    @media media-md
+      margin-bottom: 32px
+
+    &:before
+      content: ''
+      display: block;
+      background: url(../../images/sprite-zamer-check.png)
+      margin: 0 auto 20px
+
+  &__nav
+    display: none;
+    @media media-md
+      display: flex;
+      justify-content center
+
+  &__form
+    & .card__content
+      padding: 68px 90px 46px 66px
+      z-index: 1
+      @media media-md
+        padding-left: 30px
+        padding-right: 30px
+
+    @media media-lg
+      margin-right: 15px
+    @media media-md
+      margin: 0
+
+  .input
+    margin-bottom: 13px
+
+  .btnArrow
+    margin-top: 30px
+
+  &__stroitel
+    position: absolute;
+    bottom: -35px
+    left: 50%
+    margin-left: -102px
+    pointer-events none
+    anim(.3s)
+    @media media-lg
+      display: none;
+
+  &__phone
+    position: absolute;
+    bottom: 2px
+    left: 50%
+    margin-left: -203px
+    z-index: 1
+    pointer-events none
+    anim(.3s)
+    @media media-lg
+      bottom: 7px
+      margin-left: 82px
+    @media media-md
+      display: none;
+
+  &__decor
+    position: absolute;
+    left: 50%
+    margin-left: -293px;
+    bottom: 98px;
+    z-index: 1;
+    @media media-lg
+      display: none;
+

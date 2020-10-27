@@ -1,0 +1,75 @@
+.rating
+  padding: 107px 0 0
+  background: url(./img/rating-bg.jpg) 50% 50%
+  height: 834px
+  position: relative;
+  @media media-lg
+    padding: 83px 0 0
+    height: 759px
+  @media media-md
+    background: url(./img/rating-bg-sm.jpg) 50% 0
+    height: auto;
+    padding: 52px 0 40px
+
+  h2
+    text-align: center;
+    position: relative;
+    z-index: 1
+    color: #ffffff
+    @media media-md
+      margin: 0 20px 54px
+
+    span
+      display: inline-block;
+      position: relative;
+
+      &:before
+        content: ''
+        position: absolute;
+        background: url(../../images/sprite-rating-decor.png)
+        z-index: -1
+        left: -22px;
+        top: -12px;
+        @media media-md
+          display: none;
+
+  &__sites
+    position: absolute;
+    left: 50%
+    margin-left: 23px
+    transform translateX(-50%)
+    top: 210px
+    anim(.3s)
+    @media media-lg
+      top: 186px
+      margin-left: 25px
+    @media media-md
+      display: none;
+
+  &__decor
+    position: absolute;
+    right: 50%
+    margin-right: 351px;
+    top: -33px;
+    anim(.2s)
+    @media media-lg
+      display: none;
+
+  &__items
+    display: none;
+    @media media-md
+      display: block;
+
+  &__item
+    display: flex;
+    margin: 0 29px 15px
+    height: 144px
+    align-items center
+    justify-content center
+    background: #ffffff
+    border-radius: 5px
+
+    img
+      display: block;
+      max-width 100%
+      height: auto;

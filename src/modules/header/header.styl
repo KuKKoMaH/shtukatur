@@ -1,0 +1,396 @@
+.header
+  //background: url(./img/header-bg.jpg) 50% 0 no-repeat
+  background: url(../../images/bricks.jpg) 50% 50%
+  padding: 9px 0 43px
+  position: relative;
+  //z-index: 10
+  overflow: hidden;
+  @media media-lg
+    overflow: visible;
+    padding: 30px 0 48px
+  @media media-md
+    padding: 33px 0 46px
+
+  &--big
+    overflow: visible;
+    z-index: auto;
+
+  .c
+    position: relative;
+
+  &__top
+    display: flex;
+    align-items center
+    justify-content space-between
+    margin-bottom: 10px
+    position: relative;
+    z-index: 11
+
+    @media media-lg
+      padding: 0 190px 0 30px
+      margin-bottom 0
+      z-index: auto;
+    @media media-md
+      flex-direction column
+      align-items flex-start
+      padding: 0 0 0 60px
+
+  &__logo
+    @media media-md
+      display: none;
+
+  &__phone
+    display: block;
+    position: relative;
+    @media media-md
+      margin-bottom: 7px
+
+    &:before
+      content: ''
+      position: absolute;
+      background: url(../../images/sprite-call-blue.png);
+      top: 9px;
+      left: -30px;
+
+    &Value
+      font-size: 24px
+      font-weight: bold;
+      margin-bottom: -5px
+      @media media-md
+        font-size: 18px
+        margin-bottom: 0
+
+    &Label
+      font-size: 14px
+      text-decoration: underline
+      @media media-md
+        font-size: 12px
+
+  &__city
+    position: relative;
+    cursor: pointer;
+
+    &:before
+      content: ''
+      position: absolute;
+      background: url(../../images/sprite-geo-blue.png);
+      top: 4px;
+      left: -27px;
+
+    &Value
+      font-size: 18px
+      font-weight: 500
+      @media media-md
+        font-size: 16px
+        margin-bottom: 2px
+
+    &Label
+      font-size: 14px
+      text-decoration: underline
+      @media media-md
+        font-size: 12px
+
+  &__call
+    @media media-lg
+      display: none;
+
+  &__btn
+    position: relative;
+    height: 56px
+    border-radius: 5px
+    border: 0
+    background: linear-gradient(to bottom, #f3a930, #ec8426)
+    font-size: 18px
+    font-weight: 500
+    color: #ffffff
+    display: flex;
+    align-items center
+    justify-content center
+    width: 275px
+    flex-shrink 0
+    overflow: hidden;
+
+    &:before
+      content: ''
+      background: url(../../images/sprite-call-white.png)
+      margin-right: 28px
+      position: relative;
+      z-index: 1
+
+    span
+      padding-right: 28px
+      position: relative;
+      z-index: 1
+
+    &:after
+      content: ''
+      position: absolute;
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      background: linear-gradient(to bottom, #ea7822, #ef952b);
+      opacity: 0
+      anim()
+
+    &:hover:after
+      opacity: 1
+
+  &__bottom
+    height: 76px
+    position: relative;
+    z-index: 12
+    @media media-lg
+      height: 0
+
+
+  &__menuContainer
+    &--fixed
+      position: fixed;
+      top: 0
+      left: 0
+      width: 100%
+      z-index: 12
+      @media media-lg
+        .header__menu
+          top: 0
+
+
+  &__menu
+    background: #ffffff
+    border-radius: 5px
+    padding: 5px
+    //position: relative;
+    z-index: 10
+    box-shadow 0 0 27px rgba(#253247, .26)
+    @media media-lg
+      position: absolute;
+      right: -6px
+      top: -117px
+    //z-index: 4
+    @media media-md
+      top: -119px
+
+    &:before
+      @media media-lg
+        content: ''
+        position: fixed;
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        background: #2f7cbc
+        //opacity: .9
+        opacity: 0
+        pointer-events none
+        //z-index: -1
+        z-index: 1
+        transition: opacity .2s ease-in
+
+  &__menu--active
+    @media media-lg
+      &:before
+        opacity: .9
+        pointer-events all
+
+  &__menu--active &
+    &__items
+      opacity: 1
+      pointer-events all
+      transform none
+
+
+  &__items
+    border: 1px solid #dedede
+    @media media-lg
+      position: fixed;
+      top: 0
+      max-width: 360px
+      width: 100%
+      right: 0
+      bottom: 0
+      background: #ffffff
+      border: 0
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      opacity: 0
+      z-index: 11
+      pointer-events none
+      transform translateX(50px)
+      anim(.2s)
+
+    ul
+      display: flex;
+      margin: 0
+      padding: 0 12px
+      justify-content space-around
+      @media media-lg
+        justify-content flex-start
+        flex-direction column
+        padding: 0
+
+    li
+      padding: 18px 0 22px
+      margin: 0
+
+      &:before
+        display: none;
+      @media media-lg
+        border-bottom: 1px solid #f5f5f5
+        padding: 0
+
+    a
+      color: #494a4c
+      font-weight: 500
+      border: 0
+      anim()
+      @media media-lg
+        height: 59px
+        display: flex;
+        align-items center
+        padding-left: 44px
+
+      &:hover
+        color: #ed8a27
+
+  &__menuButton
+    display: none;
+    @media media-lg
+      border: 1px solid #dedede
+      padding: 22px 30px 21px 27px
+      font-size: 14px
+      font-weight: bold;
+      display: flex;
+      align-items center
+    @media media-md
+      padding: 30px 31px 30px 5px
+      font-size: 0
+
+  &__menuIcon
+    position: relative;
+    background: #ea7722
+    width: 42px
+    height: 4px
+    margin-left: 10px
+
+    &:before, &:after
+      content: ''
+      position: absolute;
+      width: 100%
+      height: 100%
+      background: #ea7722
+      left: 0
+
+    &:before
+      bottom: 100%
+      margin-bottom: 4px
+
+    &:after
+      top: 100%
+      margin-top: 4px
+
+  &__menuClose
+    display: none;
+    @media media-lg
+      display: block
+      text-align: right;
+      width: 100%
+      font-size: 18px
+      font-weight: 500
+      padding-right: 19px
+      height: 60px
+      border-bottom: 1px solid #f5f5f5
+      &:after
+        content: ''
+        display: inline-block;
+        vertical-align: middle;
+        background: url(../../images/sprite-close.png)
+        margin-left: 13px
+
+  &__menuCall
+    display: none;
+    @media media-lg
+      display: block;
+      text-align: center;
+      padding: 30px 0
+
+      .header__btn
+        margin: 0 auto
+        color: #ffffff
+
+  &__decor
+    position: absolute;
+    anim(.2s)
+    pointer-events none
+    left: 50%;
+    @media media-lg
+      display: none;
+
+    &--1
+      top: -157px;
+      margin-left: 435px;
+
+    &--2
+      top: 144px;
+      margin-left: 76px;
+      transform scale(.75)
+
+    &--3
+      top: 143px;
+      margin-left: 416px;
+
+  &__select
+    position: absolute
+    top: 100%
+    margin-top: 6px
+    background: #ffffff
+    box-shadow 0 0 27px rgba(#253247, .26)
+    width: 325px
+    opacity: 0;
+    transform translateY(10px)
+    pointer-events none
+    visibility: hidden;
+    transition transform .15s ease-out, opacity .15s ease-out, visibility .15s ease-out
+    z-index: 12
+    @media media-md
+      left: -60px
+      width: 320px
+
+    &:before
+      content ''
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 8px 4px 8px;
+      border-color: transparent transparent #fff transparent;
+      bottom: 100%
+      left: 28px
+      @media media-md
+        left: 50px
+
+    &--active
+      opacity: 1
+      transform none
+      pointer-events all
+      visibility: visible;
+
+  &__option
+    height: 70px
+    display: flex;
+    align-items: center
+    padding-left: 45px
+    font-size: 16px
+    border-bottom: 1px solid #e7e7e7
+
+    &:hover
+      background: #ea7722
+      color: #ffffff
+
+    &:last-child
+      border-bottom: 0
+
+
+  h1
+    position: relative;
+    z-index: 1

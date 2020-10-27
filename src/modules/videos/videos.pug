@@ -1,0 +1,27 @@
+.videos
+  .c
+    h2 НАША КОМАНДА ГОРДИТСЯ СВОИМИ РАБОТАМИ, НО
+    h3 МЫ УСТАЛИ ОТ НЕНАСТОЯЩИХ ОТЗЫВОВ, НАПИСАННЫХ НЕНАСТОЯЩИМИ ЛЮДЬМИ, ПОЭТОМУ МЫ ПРИНЯЛИ РЕШЕНИЕ, ПОКАЗЫВАТЬ НАШИХ КЛИЕНТОВ В ВИДЕООТЗЫВАХ И ЗА КАЖДЫЙ ВИДЕООТЗЫВ ДАВАТЬ СКИДКУ 5% НА НАШИ РАБОТЫ
+    .videos__content
+      .videos__card.card: .card__content
+        form
+          h3 НАШУ КОМПАНИЮ ВЫБИРАЮТ МНОГИЕ, ПОПРОБУЙТЕ И ВЫ
+          h4 ОСТАВЬТЕ СВОЙ НОМЕР ТЕЛЕФОНА, ПОЛУЧИТЕ КАЧЕСТВЕННУЮ РАБОТУ ОТ КОМПАНИИ НЕВСКИЙ ШТУКАТУР, И ПРИ ЖЕЛАНИИ ЗАПИШИТЕ ВИДЕООТЗЫВ ПОЛУЧИВ СКИДКУ 5% НА НАШИ УСЛУГИ.
+          input.input(placeholder='Ваш номер телефона:' type='tel')
+          button.btnArrow
+            span ПОЛУЧИТЬ СКИДКУ 5%
+            +svg('icon-doubleArrow')
+          .videos__note #[span *]ОСТАВЛЕНИЕ ЗАЯВКИ НЕ ОБЯЗУЕТ ВАС ЗАПИСЫВАТЬ ОТЗЫВ
+
+      .videos__slider
+        .videos__items
+          each i in [1,2,3,4]
+            .videos__item
+              a.videos__video(href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' style='background-image: url(https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg)')
+                .videos__icon: +svg("icon-play")
+        .videos__nav
+          button.navBtn.navBtn--prev: +svg('icon-arrow')
+          button.navBtn.navBtn--next: +svg('icon-arrow')
+
+  img.videos__decor1.lazy(data-src='images/shpatel-02.png')
+  img.videos__decor2.lazy(data-src='images/shpatel-03.png')

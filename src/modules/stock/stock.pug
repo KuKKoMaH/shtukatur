@@ -1,0 +1,36 @@
+.stock(class=STOCK_BG && 'stock--bg')
+  img.stock__decor.stock__decor--1.lazy(data-src='modules/stock/img/stock-img-01.png')
+  img.stock__decor.stock__decor--2.lazy(data-src='images/shpatel-01.png')
+  img.stock__decor.stock__decor--3.lazy(data-src='images/shpatel-03.png')
+  .c
+    h2 АКЦИИ КОМПАНИИ "НЕВСКИЙ ШТУКАТУР" ДО 31.12.2019
+    h3
+      | МЫ ДАРИМ НА ВЫБОРСОВЕРШЕННО БЕСПЛАТНО#[br]
+      span ТРИ УСЛУГИ
+
+  .stock__slider
+    .stock__items
+      .stock__item
+        .stock__img(style='height: 245px;'): img.lazy(data-src='modules/stock/img/stock-01.png')
+        .stock__text.title ОСУШИТЕЛЬ ВОЗДУХА ПОСЛЕ#[br]РАБОТЫ
+        .stock__button
+          a.btnArrow(href='#')
+            span ВЫБРАТЬ ПОДАРОК
+            +svg('icon-doubleArrow')
+      .stock__item
+        .stock__img(style='height: 320px;'): img.lazy(data-src='modules/stock/img/stock-02.png')
+        .stock__text.title ОСМОТР КВАРТИРЫ ТЕПЛОВИЗИРОМ НА#[br]ПОТЕРЮ ТЕПЛОА
+        .stock__button
+          a.btnArrow(href='#')
+            span ВЫБРАТЬ ПОДАРОК
+            +svg('icon-doubleArrow')
+      .stock__item
+        .stock__img(style='height: 255px;'): img.lazy(data-src='modules/stock/img/stock-03.png')
+        .stock__text.title ВЫНОС МУСОРА ПРИ НАЛИЧИИ#[br]КОНТЕЙНЕРА
+        .stock__button
+          a.btnArrow(href='#')
+            span ВЫБРАТЬ ПОДАРОК
+            +svg('icon-doubleArrow')
+    .stock__nav
+      button.navBtn.navBtn--prev: +svg('icon-arrow')
+      button.navBtn.navBtn--next: +svg('icon-arrow')

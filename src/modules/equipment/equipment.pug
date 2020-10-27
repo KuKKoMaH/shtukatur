@@ -1,0 +1,21 @@
+.equipment
+  .c
+    h2 ОБОРУДОВАНИЕ, ИСПОЛЬЗУЕМОЕ КОМПАНЕЙ "НЕВСКИЙ ШТУКАТУР"
+    p В нашей команде 9 бригад, которые пользуются исключительно профессиональным немецким оборудованием, которое позволяет достич высокого качества работ. При выборе подрядчика, всегда обрщайте внимание на оборудование, плохзое машинное оборудование разочарует вас своим качеством.
+    h3 МЫ РАБОТАЕМ ТОЛЬКО НА КАЧЕСТВЕННОМ НЕМЕЦКОМ ОБОРУДОВАНИИ
+
+    .equipment__slider
+      .equipment__items
+        each i in [[1, 'МАШИНКА ДЛЯ ШТУКАТУРКИ<br/>PFT GS SUPER'],[2, 'МАШИНКА ДЛЯ ШТУКАТУРКИ<br/>PFT GS SUPER'],[3, 'РАСТВОРОНАСОС ДЛЯ СТЯЖКИ<br/>UNIFORM HD050'],[4, 'ШНЕКОВЫЙ РАСТВОРОНАСОС ДЛЯ<br/>СТЯЖКИ PUTZMEISTER SP11']]
+          .equipment__item
+            .equipment__card.title
+              img.equipment__image(src='modules/equipment/img/equipment-0' + i[0] + '.png')
+              .equipment__name !{i[1]}
+              .equipment__arrow: +svg('icon-fullArrow')
+              .equipment__overlay
+                h6 13 МАШИНОК
+                p ОБЩАЯ ПРОИЗВОДИТЕЛЬНОСТЬ 1 300 М#[sup 2] В СУТКИ
+
+      .equipment__nav
+        button.navBtn.navBtn--prev: +svg('icon-arrow')
+        button.navBtn.navBtn--next: +svg('icon-arrow')

@@ -1,0 +1,52 @@
+.best
+  img.best__decor.lazy(data-src='modules/best/img/best-bg.jpg')
+  .c
+    h2 ПОЧЕМУ КОМПАНИЯ "НЕВСКИЙ ШТУКАТУР" ЛУЧШАЯ В СВОЕМ ДЕЛЕ?
+    .best__slider
+      .best__items
+        .best__item: .best__card
+          .best__counter(data-text='01') 01
+          .best__head ФИКСИРУЕМ #[br]СТОИМОСТЬ СРАЗУ
+          .best__text Подписываем финальную смету перед началом работ. Вы вносите оплату по факту выполнения каждого этапа работ
+          a.btnArrow(href='')
+            span ПОСМОТРЕТЬ ПРИМЕР#[br]ДОГОВОРА
+            +svg('icon-doubleArrow')
+        .best__item: .best__card
+          .best__counter(data-text='02') 02
+          .best__head САМИ ЗАКУПАЕМ#[br]МАТЕРИАЛ
+          .best__text Вы не теряете время на поиск и закупку материалов. Все необходимые материалы мы закупаем сами у проверенных поставщиков по оптовым ценам
+          a.btnArrow(href='')
+            span ПОСМОТРЕТЬ СТОИМОСТЬ#[br]МАТЕРИАЛОВ
+            +svg('icon-doubleArrow')
+        .best__item: .best__card
+          .best__counter(data-text='03') 03
+          .best__head ГАРАНТИРУЕМ#[br]КАЧЕСТВО
+          .best__text Подписываем финальную смету перед началом работ. Вы вносите оплату по факту выполнения каждого этапа работ
+          a.btnArrow(href='')
+            span ПОСМОТРЕТЬ ПРИМЕР#[br]ГАРАНТИИ
+            +svg('icon-doubleArrow')
+        .best__item: .best__card
+          .best__counter(data-text='04') 04
+          .best__head ВЫЕЗД ЗАМЕРЩИКА#[br]И ВЫНОС МУСОРА #[span БЕСПАТНО]
+          .best__text Подписываем финальную смету перед началом работ. Вы вносите оплату по факту выполнения каждого этапа работ
+          a.btnArrow.popup__opener(href='#popup-zamer')
+            span ВЫЗВАТЬ#[br]ЗАМЕРЩИКА
+            +svg('icon-doubleArrow')
+        .best__item: .best__card
+          .best__counter(data-text='05') 05
+          .best__head РАБОТАЕМ БЕЗ#[br]ПРЕДОПЛАТЫ
+          .best__text Подписываем финальную смету перед началом работ. Вы вносите оплату по факту выполнения каждого этапа работ
+          a.btnArrow(href='')
+            span НАЧАТЬ РАБОТАТЬ
+            +svg('icon-doubleArrow')
+        .best__item: .best__card
+          .best__counter(data-text='06') 06
+          .best__head СПЕЦИАЛИСТЫ#[br]ВХОДЯТ В ТОП5 РЕМОНТНОГО РЕЙТИНГА
+          .best__text Подписываем финальную смету перед началом работ. Вы вносите оплату по факту выполнения каждого этапа работ
+          a.btnArrow(href='')
+            span ПОСМОТРЕТЬ#[br]СПЕЦИАЛИСТОВ
+            +svg('icon-doubleArrow')
+
+      .best__nav
+        button.navBtn.navBtn--prev: +svg('icon-arrow')
+        button.navBtn.navBtn--next: +svg('icon-arrow')

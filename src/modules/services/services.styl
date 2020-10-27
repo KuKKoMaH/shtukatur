@@ -1,0 +1,127 @@
+.services
+  position: relative;
+  background: #f9f9f9
+  padding: 50px 0 61px
+  @media media-lg
+    background: #ffffff
+    padding: 50px 0 51px
+  @media media-md
+    padding: 39px 0 51px
+
+  &--bg
+    background: url(./img/services-bg.jpg) 0 0
+    background-size: cover;
+
+  h2
+    text-align: center;
+    margin-bottom: 53px
+    @media media-md
+      margin-bottom: 37px
+
+  &__items
+    display: flex;
+    flex-wrap wrap
+    justify-content center
+    @media media-lg
+      flex-wrap nowrap
+      justify-content flex-start
+
+  &__item
+    width: 33.3333%
+    position: relative;
+    z-index: 1
+    flex-shrink 0
+
+    &:before
+      content ''
+      position: absolute;
+      background: url(./img/services-card-bg.png)
+      width: 529px
+      height 416px
+      top: -13px
+      left: 50%
+      transform translateX(-50%)
+      @media media-lg
+        background: url(./img/services-card-bg-md.png)
+        width: 767px;
+        height: 424px
+      @media media-md
+        background: url(./img/services-card-bg-sm.png)
+        width: 320px
+        height: 267px
+
+  &__card
+    position: relative;
+    z-index: 1
+    padding-top: 210px
+    height: 369px;
+    margin-bottom: 24px;
+    @media media-lg
+      padding-top: 220px
+    @media media-md
+      padding-top: 225px
+      height: 354px
+
+  &__img
+    position: absolute;
+    left: 50%
+    top: 120px
+    transform translate(-50%, -50%)
+    anim(.2s)
+    @media media-lg
+      top: 135px
+    @media media-md
+      top: 100px
+      max-width: 200px
+
+  &__text
+    text-align: center;
+    font-size: 22px
+    line-height: 1.2
+    display: flex;
+    align-items center
+    justify-content center
+    height: 80px
+    @media media-lg
+      height: 105px
+    @media media-md
+      height: 85;
+
+  .btnArrow
+    position: absolute;
+    bottom: 0
+    left: 50%
+    margin-left: -125px
+    @media media-lg
+      bottom: -53px
+
+  &__nav
+    display: none;
+    @media media-lg
+      margin-top: 50px
+      display: flex;
+      justify-content center
+    @media media-md
+      margin-top: 60px
+
+
+  &__decor
+    position: absolute;
+    z-index: 1
+    anim(.2s)
+    @media media-lg
+      display: none;
+    &--1
+      right: 50%
+      margin-right: 319px;
+      top: -21px;
+
+    &--2
+      right: 50%
+      margin-right: 345px;
+      bottom: -42px;
+
+    &--3
+      left: 50%
+      margin-left: 112px;
+      bottom: -71px;

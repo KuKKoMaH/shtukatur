@@ -1,0 +1,103 @@
+.prices
+  background: url(../order/img/order-bg.jpg) 50% 50% no-repeat
+  background-size cover;
+  padding: 59px 0 72px
+
+  &__head
+    padding: 25px 0 27px
+    text-align: center;
+    background: rgba(#ffaf6a, .1)
+
+  &__info
+    max-width 450px
+    @media media-md
+      max-width: none
+
+  table
+    margin: 0
+    text-align: center;
+    @media media-md
+      display: block;
+
+    thead
+      @media media-md
+        display: none;
+
+    tbody
+      @media media-md
+        display: block;
+
+    tr
+      @media media-md
+        display: block;
+        border-top: 1px solid #dfdfe1
+        padding: 28px 20px 15px
+        &:first-child
+          border: 0
+
+      &:first-child
+        th
+          border-top: 0
+
+      &:last-child
+        td
+          border-bottom: 0
+          padding-bottom: 27px
+          @media media-md
+            padding: 0
+
+    th
+      padding: 16px 42px
+
+    td
+      padding: 16px 42px 11px
+      @media media-md
+        padding: 0
+
+    td, th
+      border: 1px solid #dfdfe1
+      vertical-align: middle;
+
+      &:first-child
+        border-left: 0
+        text-align: left;
+        @media media-md
+          text-align: center;
+
+      &:last-child
+        border-right: 0
+        width: 40%
+        text-align: center;
+        @media media-lg
+          width: 170px
+        @media media-md
+          width: 100%
+          margin-top: 8px
+
+      @media media-md
+        display: block;
+        border: 0
+
+  p
+    font-size: 16px
+    line-height: 1.5
+    margin: 0
+
+  .card
+    font-size: 18px
+
+    &:after
+      border: 3px solid #380800
+      opacity: .15
+      top: 5px
+      right: 5px
+      bottom: 5px
+      left: 5px
+      @media media-md
+        left: 0;
+        right: 0;
+        border-left: 0;
+        border-right: 0;
+
+    &__content
+      padding: 0

@@ -1,0 +1,117 @@
+.certificates
+  position: relative;
+  background: url(../../images/bricks.jpg) 50% 50%
+  padding: 70px 0 62px
+  @media media-lg
+    background: #ffffff
+    padding: 51px 0 20px
+  @media media-md
+    padding: 43px 0 20px
+
+  &:before, &:after
+    content: ''
+    position: absolute;
+    @media media-lg
+      display: none;
+
+  &:before
+    background: url(../../images/sprite-shpatel-01.png)
+    top: -37px
+    right: 50%
+    margin-right: 515px
+
+  &:after
+    background: url(../../images/sprite-shpatel-02.png)
+    opacity: .25
+    top: 70px
+    left: 50%
+    margin-left: 263px
+
+  h3
+    max-width: 840px
+    margin-bottom: 68px
+    line-height: 1.2
+    @media media-lg
+      text-align: center;
+      margin-bottom: 51px
+      padding: 0 20px
+    @media media-md
+      margin-bottom: 32px
+
+  &__container
+    display: flex;
+    align-items flex-start
+    position: relative;
+    z-index: 1
+    @media media-lg
+      flex-direction column
+      align-items center
+      width: 100%
+
+    &:after
+      content: ''
+      position: absolute;
+      background: url(../../images/sprite-shpatel-03.png)
+      bottom: -73px
+      left: 50%
+      margin-left: 491px
+      z-index: -1
+      @media media-lg
+        display: none;
+
+  .map
+    flex-shrink 0
+    width: 600px
+    height: 550px
+    position: relative;
+    background: #a8a8a8;
+    margin: 0 38px 0 15px
+    @media media-lg
+      margin: 0 auto 57px
+    @media media-md
+      display: none;
+
+    &:before
+      content: ''
+      position: absolute;
+      background: url(../../images/sprite-contacts-map.png)
+      pointer-events none
+      top: -39px
+      left: -51px
+      z-index: 1
+
+  &__slider
+    flex: 1
+    width: 100%
+
+  &__items
+    display: flex;
+    flex-wrap wrap
+    justify-content center
+    margin: 0 -13px
+    @media media-lg
+      max-width: 630px
+      margin: 0 auto
+    @media media-md
+      flex-wrap nowrap
+      justify-content flex-start
+
+  &__item
+    margin: 0 13px 21px
+    @media media-md
+      flex-shrink 0
+      margin: 0 0 53px
+
+  &__card
+    background: #ffffff
+    border-radius: 3px
+    width: 190px
+    padding: 4px
+    margin: 0 auto
+
+  &__nav
+    display: none;
+    @media media-md
+      display: flex;
+      justify-content center
+

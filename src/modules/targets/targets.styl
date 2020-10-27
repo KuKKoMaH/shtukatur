@@ -1,0 +1,142 @@
+.targets
+  position: relative;
+  background: url(../services/img/services-bg.jpg) 0 0
+  background-size: cover;
+  padding: 63px 0 75px
+  @media media-lg
+    padding: 60px 0 67px
+  @media media-md
+    padding: 49px 0 70px
+
+  h2
+    text-align: center;
+    margin-bottom: 66px
+    @media media-lg
+      margin-bottom: 53px
+    @media media-md
+      margin-bottom: 42px
+
+  &__items
+    display: flex;
+    flex-wrap wrap
+    justify-content center
+    margin: 0 -15px
+    @media media-lg
+      margin: 0
+      flex-wrap nowrap
+      justify-content flex-start
+
+  &__item
+    margin: 0 15px 56px
+    position: relative;
+    z-index: 1
+    flex-shrink 0
+    @media media-lg
+      margin: 0
+      padding: 0 20px
+    @media media-md
+      padding: 0 30px
+
+  &__card
+    width: 405px
+    max-width 405px
+    height: 322px
+    background: #fff
+    border-radius: 5px
+    position: relative
+    padding: 17px 18px 46px
+    box-shadow 0 0 27px rgba(#253247, .26)
+    @media media-lg
+      width: auto;
+      margin: 0 auto
+    @media media-md
+      padding: 16px 12px 0
+      height: 308px
+
+    &:before
+      content: ''
+      position: absolute;
+      bottom: -5px
+      left: 13px
+      right: 13px
+      height: 18px
+      border-radius: 9px
+      background: #ffffff
+      box-shadow 0 0 27px rgba(#253247, .26)
+      z-index -1
+
+      @media media-md
+        border-radius: 0
+        left: 0
+        right: 0
+
+  &__img
+    height: 172px
+    border-radius: 5px
+    margin-bottom: 27px
+    background-size: cover
+    background-position: 50% 50%;
+    @media media-md
+      height: 164px
+      margin-bottom: 24px
+
+  &__text
+    text-align: center;
+    font-size: 24px
+    line-height: 1.25
+    @media media-lg
+      font-size: 18px
+      line-height: 1.65
+
+    span
+      color: #ea7722
+
+  .btn
+    position: absolute;
+    bottom: -30px
+    left: 50%
+    transform translateX(-50%)
+    white-space nowrap
+
+  &__nav
+    display: none;
+    @media media-lg
+      margin-top: 68px
+      display: flex;
+      justify-content center
+    @media media-md
+      margin-top: 77px
+
+  &__decor
+    position: absolute;
+    z-index: 1
+    anim(.2s)
+    @media media-md
+      display: none;
+
+    &--1
+      right: 50%
+      margin-right: 319px;
+      top: -21px;
+      @media media-lg
+        margin-right: 117px;
+        width: 250px;
+        top: -28px;
+
+    &--2
+      right: 50%
+      margin-right: 345px;
+      bottom: -42px;
+      @media media-lg
+        margin-right: 136px;
+        width: 184px;
+        bottom: 21px;
+
+    &--3
+      left: 50%
+      margin-left: 112px;
+      bottom: -71px;
+      @media media-lg
+        width: 184px;
+        margin-left: 156px;
+        bottom: 2px;

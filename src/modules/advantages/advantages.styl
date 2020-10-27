@@ -1,0 +1,80 @@
+.advantages
+  position: relative;
+  z-index: 1
+  padding: 78px 0 27px
+  background: #fefefe
+  @media media-md
+    padding: 39px 0 27px
+
+  h2
+    text-align: center;
+    margin-bottom: 65px
+    @media media-md
+      margin-bottom: 38px
+
+  h3
+    text-align: center;
+    position: relative;
+    font-size: 36px
+    color: #ffffff
+    margin-bottom: 1px
+
+    &:before
+      content: ''
+      position: absolute;
+      left: 50%
+      margin-left: -118px;
+      top: -12px;
+      background: url(./img/sprite-advantages-bg.png)
+      z-index: -1
+
+  table
+    margin: 0
+    font-size: 18px
+
+    text-align: center;
+
+    td
+      height: 79px
+      vertical-align: middle;
+
+    td:first-child
+      text-align: left;
+      width: 20%
+      background: rgba(#ffaf6a, .1)
+      padding-left: 70px
+      @media media-lg
+        padding-left: 0
+        text-align: center;
+
+
+    td:nth-child(2)
+      border-left: 0
+
+  .card
+    margin-bottom: 71px
+    @media media-md
+      margin-bottom: 57px
+
+    &:after
+      border: 3px solid #380800
+      opacity: .15
+      top: 5px
+      right: 5px
+      bottom: 5px
+      left: 5px
+      @media media-md
+        left: 0;
+        right: 0;
+        border-left: 0;
+        border-right: 0;
+
+    &__content
+      padding: 0
+
+  &__sub
+    text-align: center;
+    font-size: 24px
+    @media media-md
+      font-size: 18px
+      padding: 0 20px

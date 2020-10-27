@@ -1,0 +1,207 @@
+.videos
+  padding: 71px 0 65px
+  background: url(../../images/bricks.jpg) 50% 50%
+  text-align: center;
+  position: relative;
+  @media media-lg
+    padding: 60px 0 67px
+  @media media-md
+    padding: 43px 0 44px
+
+  .c
+    position: relative;
+    z-index: 2
+
+  h2
+    margin-bottom: 22px
+    padding: 0 20px
+    @media media-md
+      margin-bottom: 15px
+
+
+  h3
+    font-size: 24px
+    line-height: 1.5
+    max-width 890px
+    margin: 0 auto
+    margin-bottom: 63px
+    padding: 0 20px
+    @media media-lg
+      padding: 0 30px
+      margin-bottom: 48px
+    @media media-md
+      font-size: 18px
+      line-height: 1.65
+      margin-bottom: 35px
+
+    &:before
+      content ''
+      display: block;
+      margin: 0 auto 23px
+      background: url(../../images/sprite-videos-underline.png)
+      @media media-md
+        margin-top: 16px
+
+  &__content
+    display: flex;
+    align-items flex-start
+    @media media-lg
+      flex-direction column
+
+  &__card
+    width: 695px
+    flex-shrink 0
+    //margin-right: 26px
+    @media media-lg
+      margin: 0 auto 34px
+      width: 700px
+    @media media-md
+      width: 100%
+      margin-bottom: 41px
+
+    .card__content
+      padding: 49px 72px 25px 72px
+      position: relative;
+      z-index: 1
+      @media media-lg
+        padding: 42px 72px 25px 72px
+      @media media-md
+        padding: 33px 29px 30px 29px
+
+    h3
+      font-size: 30px
+      line-height: 1.2
+      margin-bottom: 22px
+      padding: 0
+      @media media-md
+        font-size: 24px
+        line-height: 1.5
+        margin-bottom: 27px
+
+      &:after
+        content: ''
+        display: block;
+        height: 1px
+        width: 100%
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAABCAQAAABXwBd7AAAADUlEQVR42mNi+A+HDAAjBAT+TTXN0AAAAABJRU5ErkJggg==');
+        opacity: .2
+        margin-top: 28px
+        @media media-md
+          margin-left: -29px
+          margin-right: -209px
+          width: auto;
+          margin-top: 25px
+
+    h4
+      font-size: 18px
+      margin-bottom: 32px
+      @media media-md
+        margin-bottom: 22px
+
+    .btnArrow
+      margin: 25px auto 0
+
+  &__note
+    margin-top: 20px
+    font-family: 'DIN Pro Cond', sans-serif;
+    color: #380800
+    font-size: 18px
+
+    span
+      color: #ff2400
+
+  &__slider
+    overflow: hidden;
+    max-width 1150px
+    margin: 0 auto
+    @media media-lg
+      width: 100%
+
+  &__items
+    display: flex;
+    flex-wrap wrap
+    justify-content center
+    margin: 0 -13px
+    @media media-lg
+      justify-content flex-start
+      flex-wrap nowrap
+
+  &__item
+    flex-shrink 0
+    margin: 0 13px 25px
+
+  &__video
+    position: relative;
+    display: block;
+    width: 267px;
+    height: 251px;
+    border: 5px solid #fff;
+    border-radius: 5px
+    background-size: cover;
+    @media media-lg
+      width: 710px
+      height: 356px
+      margin: 0 auto
+    @media media-md
+      height: 251px
+      width: auto;
+      margin: 0 20px
+
+  &__icon
+    position: absolute;
+    top: 50%
+    left: 50%
+    transform translate(-50%, -50%)
+
+    &:before
+      content: ''
+      display: block;
+      width: 89px
+      height: 89px
+      border-radius: 50%
+      background: #000
+      opacity: .39
+
+    svg
+      position: absolute;
+      top: 50%
+      left: 50%
+      transform translate(-50%, -50%)
+      width: 31px
+      height: 35px
+      margin-left: 4px
+
+  &__nav
+    display: none;
+    @media media-lg
+      margin-top: 23px
+      display: flex;
+      justify-content center
+    @media media-md
+      margin-top: 16px
+
+
+  &__decor1, &__decor2, &__decor3
+    position: absolute;
+    left: 50%
+    z-index: 1
+    anim(.2s)
+
+  &__decor1
+    top: 71px;
+    margin-left: 256px;
+
+    &.lazy--visible
+      opacity: .25
+
+  &__decor2
+    bottom: -17px;
+    margin-left: 485px;
+    @media media-lg
+      display: none;
+
+  &__decor3
+    top: -31px;
+    margin-left: -625px;
+    @media media-lg
+      display: none;

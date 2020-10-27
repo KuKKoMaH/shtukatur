@@ -1,0 +1,16 @@
+.team
+  .c
+    .team__slider
+      .team__items
+        each i in [1,2,3,4,5,6]
+          .team__item
+            .team__card
+              img.team__img(src='modules/team/img/team.jpg')
+              .team__top
+                | TOP
+                +svg('icon-star')
+              .team__name ЕВГЕНИЙ
+              .team__position ГЕНЕРАЛЬНЫЙ ДИРЕКТОР
+      .team__nav
+        button.navBtn.navBtn--prev: +svg('icon-arrow')
+        button.navBtn.navBtn--next: +svg('icon-arrow')

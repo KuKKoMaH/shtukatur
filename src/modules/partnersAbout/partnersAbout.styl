@@ -1,0 +1,41 @@
+.partnersAbout
+  padding: 50px 0 66px
+  position: relative;
+  min-height 550px
+  background: #f9f9f9
+  @media media-lg
+    padding: 57px 0 50px
+    min-height auto
+    background: #ffffff
+  @media media-md
+    padding: 31px 0 33px
+
+  &__content
+    padding-left: 430px
+    line-height: 1.7
+    font-size: 18px
+    @media media-lg
+      text-align: center;
+      padding: 0 20px
+
+  p
+    margin-bottom: 13px
+
+  hr
+    background: url(../../images/sprite-partnersAbout-hr.png)
+    border: 0
+    margin-bottom: 14px
+    @media media-lg
+      margin: 0 auto 14px
+    @media media-md
+      display: none;
+
+  &__img
+    position: absolute;
+    right: 50%
+    margin-right: 145px;
+    bottom: -54px;
+    anim(.2s)
+    z-index: 10
+    @media media-lg
+      display: none;

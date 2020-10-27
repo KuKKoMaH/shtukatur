@@ -1,0 +1,81 @@
+.popup
+  max-width: 600px
+  margin: 0 auto
+  position: relative
+  background-color: #fff
+  background-image url('data:image/gif;base64,R0lGODdhFwAJAPMKAP7+/vb29vf39/j4+Pn5+fr6+vv7+/z8/P39/f////X19QAAAAAAAAAAAAAAAAAAACwAAAAAFwAJAAAEMDDJSRM6xqDKqxFKKBZdhYDFBqxfcJRnkJbtRhQGgaqlRYSggIDA600QJKNyyWyWIgA7');
+  border-radius: 5px
+  @media media-md
+    margin-top: 50px
+
+  &--lg
+    max-width: 1225px
+
+  .mfp-close
+    width: 40px
+    height: 40px
+    color: #e74650
+    background: #ffffff
+    border-radius: 50%
+    padding: 0
+    right: 12px
+    top: 27px
+    @media media-md
+      top: auto;
+      bottom: 100%
+      margin-bottom: 4px
+
+  &__header
+    padding: 15px 70px
+    min-height 94px
+    font-size: 24px
+    line-height: 1.25
+    display: flex;
+    align-items center
+    justify-content center
+    text-align: center;
+    background-color: #eb7c2a
+    border-radius: 5px
+    color: #ffffff
+    @media media-md
+      padding: 15px 8px
+
+  &__body
+    font-size: 20px
+    padding: 36px 48px
+    position: relative;
+    @media media-md
+      padding: 24px 8px
+
+    > *:last-child
+      margin-bottom: 0
+
+  &__buttons
+    display: flex;
+    justify-content space-between
+
+    .btn
+      width: 40%
+
+    @media media-md
+      flex-direction column
+      .btn
+        width: 100%
+        margin-bottom: 12px
+
+        &:last-child
+          margin-bottom: 0
+
+  &__time
+    display: none;
+
+  &__submit
+    min-width 300px
+    width: auto;
+    font-size: 18px
+    @media media-md
+      min-width 0
+      width: 100%
+
+
+//@media media-md

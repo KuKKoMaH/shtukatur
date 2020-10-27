@@ -1,0 +1,36 @@
+.workInfo
+  .c
+    .workInfo__slider
+      .workInfo__items
+        each i in [1,2,3,4]
+          a(href='modules/workInfo/img/workInfo-img.jpg').workInfo__item
+            img.workInfo__card(src='modules/workInfo/img/workInfo-img.jpg')
+      .workInfo__nav
+        button.navBtn.navBtn--prev: +svg('icon-arrow')
+        button.navBtn.navBtn--next: +svg('icon-arrow')
+
+    .workInfo__bullets
+      .workInfo__bullet
+        .workInfo__header.title
+          +svg('icon-house')
+          | ВИД ОБЪЕКТА:
+        .workInfo__value 2-х этажный монолитный дом, обложенный
+      .workInfo__bullet
+        .workInfo__header.title
+          +svg('icon-house')
+          | ПЛОЩАДЬ ОБЪЕКТА:
+        .workInfo__value 2345 кв м
+      .workInfo__bullet
+        .workInfo__header.title
+          +svg('icon-house')
+          | СЛОЖНОСТЬ РАБОТ:
+        .workInfo__value
+          +svg('icon-star')
+          +svg('icon-star')
+          +svg('icon-star')
+          +svg('icon-star')
+          +svg('icon-star')
+
+    .workInfo__content
+      p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+      p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.

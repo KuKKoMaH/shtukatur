@@ -1,0 +1,125 @@
+.contacts
+  padding: 61px 0 140px
+  @media media-lg
+    background: #f8f8f8
+    padding: 69px 0 97px
+  @media media-md
+    padding: 56px 0 64px
+
+  &__container
+    display: flex;
+    align-items flex-start
+    @media media-lg
+      flex-direction column
+      align-items stretch
+
+  .map
+    flex-shrink 0
+    width: 600px
+    height: 550px
+    position: relative;
+    background: #a8a8a8;
+    margin: 0 38px 0 15px
+    @media media-lg
+      margin: 0 auto 49px
+    @media media-md
+      width: auto;
+      margin: 0 30px 32px
+      border: 10px solid #fff
+      border-radius: 3px
+      height: 325px
+
+    &:before
+      content: ''
+      position: absolute;
+      background: url(../../images/sprite-contacts-map.png)
+      pointer-events none
+      top: -49px
+      left: -51px
+      z-index: 1
+      @media media-md
+        display: none;
+
+  &__content
+    flex: 1
+    padding-left: 15px
+    @media media-lg
+      padding-left: 0
+      width: 605px
+      margin: 0 auto
+    @media media-md
+      width: 100%
+
+    h3
+      margin-bottom: 26px
+      @media media-md
+        font-size: 30px
+        margin-bottom: 30px
+
+    li
+      padding-left: 0
+      margin-bottom: 24px
+
+      &:before
+        @media media-md
+          display: none;
+
+  &__cols
+    display: flex;
+    margin-bottom: 20px
+    @media media-md
+      flex-direction column
+      text-align: center
+      align-items center
+
+  &__col
+    width: 260px
+
+  &__requsites
+    display: flex;
+    align-items center
+    @media media-md
+      flex-direction column
+      margin-bottom: 10px
+    //justify-content center
+
+    li
+      //margin: 0 20px
+      margin-left: 60px
+      @media media-md
+        margin: 0 0 25px
+
+      &:before
+        left: -34px
+        @media media-md
+          display: none
+
+      &:first-child
+        margin-left: 0
+
+        &:before
+          display: none;
+
+  &__card
+    & .card__content
+      position: relative;
+      padding: 29px 139px 80px 116px
+      text-align: center;
+      @media media-md
+        padding: 47px 41px 105px 41px
+
+
+  &__form
+    position: relative;
+    z-index: 2
+
+    h3
+      margin-bottom: 35px
+      @media media-md
+        font-size: 24px
+
+    .btnArrow
+      position: absolute;
+      bottom: -117px;
+      left: 50%;
+      margin-left: -126px;
