@@ -1,0 +1,38 @@
+.video
+  background: url("img/bricks.jpg") 0 0
+  padding: 30px 0 70px
+  text-align: center;
+
+  .h2
+
+    &:after
+      content: ''
+      display: block;
+      margin: 20px auto 0
+      background: url(./img/sprite-stock-line.png)
+      @media media-md
+        position: absolute;
+        top: -15px
+        margin-top: 0
+
+
+  .h3
+    margin-top: 20px
+
+  &__video
+    position: relative;
+    width: 100%
+    max-width 700px
+    margin: 40px auto 0
+
+    &:before
+      content: ''
+      display: block;
+      padding-top: 56.25%;
+
+    iframe
+      position: absolute;
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
